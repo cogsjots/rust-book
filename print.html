@@ -51,12 +51,12 @@
 <p><em>by Steve Klabnik, Carol Nichols, and Chris Krycho, with contributions from the
 Rust Community</em></p>
 <p>This version of the text assumes you’re using Rust 1.82.0 (released 2024-10-17)
-or later. See the <a href="ch01-01-installation.html">“Installation” section of Chapter 1</a><!-- ignore -->
+or later. See the <a href="https://rust-book.cs.brown.edu/ch01-01-installation.html">“Installation” section of Chapter 1</a><!-- ignore -->
 to install or update Rust.</p>
 <p>The HTML format is available online at
 <a href="https://doc.rust-lang.org/stable/book/">https://doc.rust-lang.org/stable/book/</a>
 and offline with installations of Rust made with <code>rustup</code>; run <code>rustup doc --book</code> to open.</p>
-<p>Several community <a href="appendix-06-translation.html">translations</a> are also available.</p>
+<p>Several community <a href="https://rust-book.cs.brown.edu/appendix-06-translation.html">translations</a> are also available.</p>
 <p>This text is available in <a href="https://nostarch.com/rust-programming-language-2nd-edition">paperback and ebook format from No Starch
 Press</a>.</p>
 <blockquote>
@@ -364,7 +364,7 @@ if you prefer to use an integrated development environment (IDE) instead of
 the command line, feel free to use your favorite IDE. Many IDEs now have some
 degree of Rust support; check the IDE’s documentation for details. The Rust
 team has been focusing on enabling great IDE support via <code>rust-analyzer</code>. See
-<a href="appendix-04-useful-development-tools.html">Appendix D</a><!-- ignore --> for more details.</p>
+<a href="https://rust-book.cs.brown.edu/appendix-04-useful-development-tools.html">Appendix D</a><!-- ignore --> for more details.</p>
 </section>
 <h3 id="creating-a-project-directory"><a class="header" href="#creating-a-project-directory">Creating a Project Directory</a></h3>
 <p>You’ll start by making a directory to store your Rust code. It doesn’t matter
@@ -412,7 +412,7 @@ Hello, world!
 </code></pre>
 <p>Regardless of your operating system, the string <code>Hello, world!</code> should print to
 the terminal. If you don’t see this output, refer back to the
-<a href="ch01-01-installation.html#troubleshooting">“Troubleshooting”</a><!-- ignore --> part of the Installation
+<a href="https://rust-book.cs.brown.edu/ch01-01-installation.html#troubleshooting">“Troubleshooting”</a><!-- ignore --> part of the Installation
 section for ways to get help.</p>
 <p>If <code>Hello, world!</code> did print, congratulations! You’ve officially written a Rust
 program. That makes you a Rust programmer—welcome!</p>
@@ -433,7 +433,7 @@ line as the function declaration, adding one space in between.</p>
 <p>Note: If you want to stick to a standard style across Rust projects, you can
 use an automatic formatter tool called <code>rustfmt</code> to format your code in a
 particular style (more on <code>rustfmt</code> in
-<a href="appendix-04-useful-development-tools.html">Appendix D</a><!-- ignore -->). The Rust team has included this tool
+<a href="https://rust-book.cs.brown.edu/appendix-04-useful-development-tools.html">Appendix D</a><!-- ignore -->). The Rust team has included this tool
 with the standard Rust distribution, as <code>rustc</code> is, so it should already be
 installed on your computer!</p>
 </section>
@@ -511,7 +511,7 @@ using Cargo, adding dependencies will be much easier to do.</p>
 <p>Because the vast majority of Rust projects use Cargo, the rest of this book
 assumes that you’re using Cargo too. Cargo comes installed with Rust if you
 used the official installers discussed in the
-<a href="ch01-01-installation.html#installation">“Installation”</a><!-- ignore --> section. If you installed Rust
+<a href="https://rust-book.cs.brown.edu/ch01-01-installation.html#installation">“Installation”</a><!-- ignore --> section. If you installed Rust
 through some other means, check whether Cargo is installed by entering the
 following in your terminal:</p>
 <pre><code class="language-console">$ cargo --version
@@ -562,7 +562,7 @@ following statements are configuring a package. As we add more information to
 this file, we’ll add other sections.</p>
 <p>The next three lines set the configuration information Cargo needs to compile
 your program: the name, the version, and the edition of Rust to use. We’ll talk
-about the <code>edition</code> key in <a href="appendix-05-editions.html">Appendix E</a><!-- ignore -->.</p>
+about the <code>edition</code> key in <a href="https://rust-book.cs.brown.edu/appendix-05-editions.html">Appendix E</a><!-- ignore -->.</p>
 <p>The last line, <code>[dependencies]</code>, is the start of a section for you to list any
 of your project’s dependencies. In Rust, packages of code are referred to as
 <em>crates</em>. We won’t need any other crates for this project, but we will in the
@@ -857,7 +857,7 @@ line. We use the <code>let</code> statement to create the variable. Here’s ano
 <p>This line creates a new variable named <code>apples</code> and binds it to the value 5. In
 Rust, variables are immutable by default, meaning once we give the variable a
 value, the value won’t change. We’ll be discussing this concept in detail in
-the <a href="ch03-01-variables-and-mutability.html#variables-and-mutability">“Variables and Mutability”</a><!-- ignore -->
+the <a href="https://rust-book.cs.brown.edu/ch03-01-variables-and-mutability.html#variables-and-mutability">“Variables and Mutability”</a><!-- ignore -->
 section in Chapter 3. To make a variable mutable, we add <code>mut</code> before the
 variable name:</p>
 <pre><code class="language-rust ignore">let apples = 5; // immutable
@@ -865,7 +865,7 @@ let mut bananas = 5; // mutable</code></pre>
 <section class="note" aria-role="note">
 <p>Note: The <code>//</code> syntax starts a comment that continues until the end of the
 line. Rust ignores everything in comments. We’ll discuss comments in more
-detail in <a href="ch03-04-comments.html">Chapter 3</a><!-- ignore -->.</p>
+detail in <a href="https://rust-book.cs.brown.edu/ch03-04-comments.html">Chapter 3</a><!-- ignore -->.</p>
 </section>
 <p>Returning to the guessing game program, you now know that <code>let mut guess</code> will
 introduce a mutable variable named <code>guess</code>. The equal sign (<code>=</code>) tells Rust we
@@ -952,10 +952,10 @@ lines when you call a method with the <code>.method_name()</code> syntax. Now le
 discuss what this line does.</p>
 <p>As mentioned earlier, <code>read_line</code> puts whatever the user enters into the string
 we pass to it, but it also returns a <code>Result</code> value. <a href="../std/result/enum.Result.html"><code>Result</code></a><!--
-ignore --> is an <a href="ch06-00-enums.html"><em>enumeration</em></a><!-- ignore -->, often called an <em>enum</em>,
+ignore --> is an <a href="https://rust-book.cs.brown.edu/ch06-00-enums.html"><em>enumeration</em></a><!-- ignore -->, often called an <em>enum</em>,
 which is a type that can be in one of multiple possible states. We call each
 possible state a <em>variant</em>.</p>
-<p><a href="ch06-00-enums.html">Chapter 6</a><!-- ignore --> will cover enums in more detail. The purpose
+<p><a href="https://rust-book.cs.brown.edu/ch06-00-enums.html">Chapter 6</a><!-- ignore --> will cover enums in more detail. The purpose
 of these <code>Result</code> types is to encode error-handling information.</p>
 <p><code>Result</code>’s variants are <code>Ok</code> and <code>Err</code>. The <code>Ok</code> variant indicates the
 operation was successful, and inside <code>Ok</code> is the successfully generated value.
@@ -993,7 +993,7 @@ warning: `guessing_game` (bin "guessing_game") generated 1 warning
 indicating that the program hasn’t handled a possible error.</p>
 <p>The right way to suppress the warning is to actually write error-handling code,
 but in our case we just want to crash this program when a problem occurs, so we
-can use <code>expect</code>. You’ll learn about recovering from errors in <a href="ch09-02-recoverable-errors-with-result.html">Chapter
+can use <code>expect</code>. You’ll learn about recovering from errors in <a href="https://rust-book.cs.brown.edu/ch09-02-recoverable-errors-with-result.html">Chapter
 9</a><!-- ignore -->.</p>
 <h3 id="printing-values-with-println-placeholders"><a class="header" href="#printing-values-with-println-placeholders">Printing Values with <code>println!</code> Placeholders</a></h3>
 <p>Aside from the closing curly bracket, there’s only one more line to discuss in
@@ -1329,7 +1329,7 @@ the three outcomes that are possible when you compare two values.</p>
 compared. It takes a reference to whatever you want to compare with: here it’s
 comparing <code>guess</code> to <code>secret_number</code>. Then it returns a variant of the
 <code>Ordering</code> enum we brought into scope with the <code>use</code> statement. We use a
-<a href="ch06-02-match.html"><code>match</code></a><!-- ignore --> expression to decide what to do next based on
+<a href="https://rust-book.cs.brown.edu/ch06-02-match.html"><code>match</code></a><!-- ignore --> expression to decide what to do next based on
 which variant of <code>Ordering</code> was returned from the call to <code>cmp</code> with the values
 in <code>guess</code> and <code>secret_number</code>.</p>
 <p>A <code>match</code> expression is made up of <em>arms</em>. An arm consists of a <em>pattern</em> to
@@ -1437,7 +1437,7 @@ a variable named <code>guess</code>? It does, but helpfully Rust allows us to sh
 previous value of <code>guess</code> with a new one. <em>Shadowing</em> lets us reuse the <code>guess</code>
 variable name rather than forcing us to create two unique variables, such as
 <code>guess_str</code> and <code>guess</code>, for example. We’ll cover this in more detail in
-<a href="ch03-01-variables-and-mutability.html#shadowing">Chapter 3</a><!-- ignore -->, but for now, know that this feature is
+<a href="https://rust-book.cs.brown.edu/ch03-01-variables-and-mutability.html#shadowing">Chapter 3</a><!-- ignore -->, but for now, know that this feature is
 often used when you want to convert a value from one type to another type.</p>
 <p>We bind this new variable to the expression <code>guess.trim().parse()</code>. The <code>guess</code>
 in the expression refers to the original <code>guess</code> variable that contained the
@@ -1456,7 +1456,7 @@ tell Rust the exact number type we want by using <code>let guess: u32</code>. Th
 (<code>:</code>) after <code>guess</code> tells Rust we’ll annotate the variable’s type. Rust has a
 few built-in number types; the <code>u32</code> seen here is an unsigned, 32-bit integer.
 It’s a good default choice for a small positive number. You’ll learn about
-other number types in <a href="ch03-02-data-types.html#integer-types">Chapter 3</a><!-- ignore -->.</p>
+other number types in <a href="https://rust-book.cs.brown.edu/ch03-02-data-types.html#integer-types">Chapter 3</a><!-- ignore -->.</p>
 <p>Additionally, the <code>u32</code> annotation in this example program and the comparison
 with <code>secret_number</code> means Rust will infer that <code>secret_number</code> should be a
 <code>u32</code> as well. So now the comparison will be between two values of the same
@@ -1465,7 +1465,7 @@ type!</p>
 into numbers and so can easily cause errors. If, for example, the string
 contained <code>A👍%</code>, there would be no way to convert that to a number. Because it
 might fail, the <code>parse</code> method returns a <code>Result</code> type, much as the <code>read_line</code>
-method does (discussed earlier in <a href="ch02-00-guessing-game-tutorial.html#handling-potential-failure-with-result">“Handling Potential Failure with
+method does (discussed earlier in <a href="https://rust-book.cs.brown.edu/ch02-00-guessing-game-tutorial.html#handling-potential-failure-with-result">“Handling Potential Failure with
 <code>Result</code>”</a><!-- ignore-->). We’ll treat
 this <code>Result</code> the same way by using the <code>expect</code> method again. If <code>parse</code>
 returns an <code>Err</code> <code>Result</code> variant because it couldn’t create a number from the
@@ -1543,7 +1543,7 @@ and run the program again. The program will now ask for another guess forever,
 which actually introduces a new problem. It doesn’t seem like the user can quit!</p>
 <p>The user could always interrupt the program by using the keyboard shortcut
 <kbd>ctrl</kbd>-<kbd>c</kbd>. But there’s another way to escape this insatiable
-monster, as mentioned in the <code>parse</code> discussion in <a href="ch02-00-guessing-game-tutorial.html#comparing-the-guess-to-the-secret-number">“Comparing the Guess to the
+monster, as mentioned in the <code>parse</code> discussion in <a href="https://rust-book.cs.brown.edu/ch02-00-guessing-game-tutorial.html#comparing-the-guess-to-the-secret-number">“Comparing the Guess to the
 Secret Number”</a><!-- ignore -->: if
 the user enters a non-number answer, the program will crash. We can take
 advantage of that to allow the user to quit, as shown here:</p>
@@ -1792,9 +1792,9 @@ these words as names of variables or functions. Most of the keywords have
 special meanings, and you’ll be using them to do various tasks in your Rust
 programs; a few have no current functionality associated with them but have
 been reserved for functionality that might be added to Rust in the future. You
-can find a list of the keywords in <a href="appendix-01-keywords.html">Appendix A</a><!-- ignore -->.</p>
+can find a list of the keywords in <a href="https://rust-book.cs.brown.edu/appendix-01-keywords.html">Appendix A</a><!-- ignore -->.</p>
 </section><h2 id="variables-and-mutability"><a class="header" href="#variables-and-mutability">Variables and Mutability</a></h2>
-<p>As mentioned in the <a href="ch02-00-guessing-game-tutorial.html#storing-values-with-variables">“Storing Values with
+<p>As mentioned in the <a href="https://rust-book.cs.brown.edu/ch02-00-guessing-game-tutorial.html#storing-values-with-variables">“Storing Values with
 Variables”</a><!-- ignore --> section, by default,
 variables are immutable. This is one of many nudges Rust gives you to write
 your code in a way that takes advantage of the safety and easy concurrency that
@@ -1851,7 +1851,7 @@ won’t change, so you don’t have to keep track of it yourself. Your code is t
 easier to reason through.</p>
 <p>But mutability can be very useful, and can make code more convenient to write.
 Although variables are immutable by default, you can make them mutable by
-adding <code>mut</code> in front of the variable name as you did in <a href="ch02-00-guessing-game-tutorial.html#storing-values-with-variables">Chapter
+adding <code>mut</code> in front of the variable name as you did in <a href="https://rust-book.cs.brown.edu/ch02-00-guessing-game-tutorial.html#storing-values-with-variables">Chapter
 2</a><!-- ignore -->. Adding <code>mut</code> also conveys
 intent to future readers of the code by indicating that other parts of the code
 will be changing this variable’s value.</p>
@@ -1882,7 +1882,7 @@ and variables.</p>
 immutable by default—they’re always immutable. You declare constants using the
 <code>const</code> keyword instead of the <code>let</code> keyword, and the type of the value <em>must</em>
 be annotated. We’ll cover types and type annotations in the next section,
-<a href="ch03-02-data-types.html#data-types">“Data Types”</a><!-- ignore -->, so don’t worry about the details
+<a href="https://rust-book.cs.brown.edu/ch03-02-data-types.html#data-types">“Data Types”</a><!-- ignore -->, so don’t worry about the details
 right now. Just know that you must always annotate the type.</p>
 <p>Constants can be declared in any scope, including the global scope, which makes
 them useful for values that many parts of code need to know about.</p>
@@ -1913,7 +1913,7 @@ conveying the meaning of that value to future maintainers of the code. It also
 helps to have only one place in your code you would need to change if the
 hardcoded value needed to be updated in the future.</p>
 <h3 id="shadowing"><a class="header" href="#shadowing">Shadowing</a></h3>
-<p>As you saw in the guessing game tutorial in <a href="ch02-00-guessing-game-tutorial.html#comparing-the-guess-to-the-secret-number">Chapter
+<p>As you saw in the guessing game tutorial in <a href="https://rust-book.cs.brown.edu/ch02-00-guessing-game-tutorial.html#comparing-the-guess-to-the-secret-number">Chapter
 2</a><!-- ignore -->, you can declare a
 new variable with the same name as a previous variable. Rustaceans say that the
 first variable is <em>shadowed</em> by the second, which means that the second
@@ -1996,7 +1996,7 @@ two data type subsets: scalar and compound.</p>
 must know the types of all variables at compile time. The compiler can usually
 infer what type we want to use based on the value and how we use it. In cases
 when many types are possible, such as when we converted a <code>String</code> to a numeric
-type using <code>parse</code> in the <a href="ch02-00-guessing-game-tutorial.html#comparing-the-guess-to-the-secret-number">“Comparing the Guess to the Secret
+type using <code>parse</code> in the <a href="https://rust-book.cs.brown.edu/ch02-00-guessing-game-tutorial.html#comparing-the-guess-to-the-secret-number">“Comparing the Guess to the Secret
 Number”</a><!-- ignore --> section in
 Chapter 2, we must add a type annotation, like this:</p>
 <pre><code class="language-rust edition2021"><span class="boring">#![allow(unused)]
@@ -2089,7 +2089,7 @@ some sort of collection.</p>
 When you’re compiling in debug mode, Rust includes checks for integer overflow
 that cause your program to <em>panic</em> at runtime if this behavior occurs. Rust
 uses the term <em>panicking</em> when a program exits with an error; we’ll discuss
-panics in more depth in the <a href="ch09-01-unrecoverable-errors-with-panic.html">“Unrecoverable Errors with
+panics in more depth in the <a href="https://rust-book.cs.brown.edu/ch09-01-unrecoverable-errors-with-panic.html">“Unrecoverable Errors with
 <code>panic!</code>”</a><!-- ignore --> section in Chapter
 9.</p>
 <p>When you’re compiling in release mode with the <code>--release</code> flag, Rust does
@@ -2150,7 +2150,7 @@ how you’d use each numeric operation in a <code>let</code> statement:</p>
     let remainder = 43 % 5;
 }</code></pre></pre>
 <p>Each expression in these statements uses a mathematical operator and evaluates
-to a single value, which is then bound to a variable. <a href="appendix-02-operators.html">Appendix
+to a single value, which is then bound to a variable. <a href="https://rust-book.cs.brown.edu/appendix-02-operators.html">Appendix
 B</a><!-- ignore --> contains a list of all operators that Rust
 provides.</p>
 <h4 id="the-boolean-type"><a class="header" href="#the-boolean-type">The Boolean Type</a></h4>
@@ -2164,7 +2164,7 @@ Rust is specified using <code>bool</code>. For example:</p>
     let f: bool = false; // with explicit type annotation
 }</code></pre></pre>
 <p>The main way to use Boolean values is through conditionals, such as an <code>if</code>
-expression. We’ll cover how <code>if</code> expressions work in Rust in the <a href="ch03-05-control-flow.html#control-flow">“Control
+expression. We’ll cover how <code>if</code> expressions work in Rust in the <a href="https://rust-book.cs.brown.edu/ch03-05-control-flow.html#control-flow">“Control
 Flow”</a><!-- ignore --> section.</p>
 <h4 id="the-character-type"><a class="header" href="#the-character-type">The Character Type</a></h4>
 <p>Rust’s <code>char</code> type is the language’s most primitive alphabetic type. Here are
@@ -2183,7 +2183,7 @@ and zero-width spaces are all valid <code>char</code> values in Rust. Unicode Sc
 Values range from <code>U+0000</code> to <code>U+D7FF</code> and <code>U+E000</code> to <code>U+10FFFF</code> inclusive.
 However, a “character” isn’t really a concept in Unicode, so your human
 intuition for what a “character” is may not match up with what a <code>char</code> is in
-Rust. We’ll discuss this topic in detail in <a href="ch08-02-strings.html#storing-utf-8-encoded-text-with-strings">“Storing UTF-8 Encoded Text with
+Rust. We’ll discuss this topic in detail in <a href="https://rust-book.cs.brown.edu/ch08-02-strings.html#storing-utf-8-encoded-text-with-strings">“Storing UTF-8 Encoded Text with
 Strings”</a><!-- ignore --> in Chapter 8.</p>
 <h3 id="compound-types"><a class="header" href="#compound-types">Compound Types</a></h3>
 <p><em>Compound types</em> can group multiple values into one type. Rust has two
@@ -2247,12 +2247,12 @@ brackets:</p>
 }</code></pre></pre>
 <p>Arrays are useful when you want your data allocated on the stack, the same as
 the other types we have seen so far, rather than the heap (we will discuss the
-stack and the heap more in <a href="ch04-01-what-is-ownership.html#the-stack-and-the-heap">Chapter 4</a><!-- ignore -->) or when
+stack and the heap more in <a href="https://rust-book.cs.brown.edu/ch04-01-what-is-ownership.html#the-stack-and-the-heap">Chapter 4</a><!-- ignore -->) or when
 you want to ensure you always have a fixed number of elements. An array isn’t as
 flexible as the vector type, though. A <em>vector</em> is a similar collection type
 provided by the standard library that <em>is</em> allowed to grow or shrink in size. If
 you’re unsure whether to use an array or a vector, chances are you should use a
-vector. <a href="ch08-01-vectors.html">Chapter 8</a><!-- ignore --> discusses vectors in more detail.</p>
+vector. <a href="https://rust-book.cs.brown.edu/ch08-01-vectors.html">Chapter 8</a><!-- ignore --> discusses vectors in more detail.</p>
 <p>However, arrays are more useful when you know the number of elements will not
 need to change. For example, if you were using the names of the month in a
 program, you would probably use an array rather than a vector because you know
@@ -2656,7 +2656,7 @@ separate line above the code it’s annotating:</p>
     let lucky_number = 7;
 }</code></pre></pre>
 <p>Rust also has another kind of comment, documentation comments, which we’ll
-discuss in the <a href="ch14-02-publishing-to-crates-io.html">“Publishing a Crate to Crates.io”</a><!-- ignore -->
+discuss in the <a href="https://rust-book.cs.brown.edu/ch14-02-publishing-to-crates-io.html">“Publishing a Crate to Crates.io”</a><!-- ignore -->
 section of Chapter 14.</p>
 <h2 id="control-flow"><a class="header" href="#control-flow">Control Flow</a></h2>
 <p>The ability to run some code depending on whether a condition is <code>true</code> and to
@@ -2684,7 +2684,7 @@ this case, the condition checks whether or not the variable <code>number</code> 
 value less than 5. We place the block of code to execute if the condition is
 <code>true</code> immediately after the condition inside curly brackets. Blocks of code
 associated with the conditions in <code>if</code> expressions are sometimes called <em>arms</em>,
-just like the arms in <code>match</code> expressions that we discussed in the <a href="ch02-00-guessing-game-tutorial.html#comparing-the-guess-to-the-secret-number">“Comparing
+just like the arms in <code>match</code> expressions that we discussed in the <a href="https://rust-book.cs.brown.edu/ch02-00-guessing-game-tutorial.html#comparing-the-guess-to-the-secret-number">“Comparing
 the Guess to the Secret Number”</a><!--
 ignore --> section of Chapter 2.</p>
 <p>Optionally, we can also include an <code>else</code> expression, which we chose to do
@@ -2892,7 +2892,7 @@ the code was in the loop when it received the interrupt signal.</p>
 <p>Fortunately, Rust also provides a way to break out of a loop using code. You
 can place the <code>break</code> keyword within the loop to tell the program when to stop
 executing the loop. Recall that we did this in the guessing game in the
-<a href="ch02-00-guessing-game-tutorial.html#quitting-after-a-correct-guess">“Quitting After a Correct Guess”</a><!-- ignore
+<a href="https://rust-book.cs.brown.edu/ch02-00-guessing-game-tutorial.html#quitting-after-a-correct-guess">“Quitting After a Correct Guess”</a><!-- ignore
 --> section of Chapter 2 to exit the program when the user won the game by
 guessing the correct number.</p>
 <p>We also used <code>continue</code> in the guessing game, which in a loop tells the program
@@ -3215,7 +3215,7 @@ similar to that in other programming languages. Now we’ll build on top of this
 understanding by introducing the <code>String</code> type.</p>
 <h3 id="the-string-type"><a class="header" href="#the-string-type">The <code>String</code> Type</a></h3>
 <p>To illustrate the rules of ownership, we need a data type that is more complex
-than those we covered in the <a href="ch03-02-data-types.html#data-types">“Data Types”</a><!-- ignore --> section
+than those we covered in the <a href="https://rust-book.cs.brown.edu/ch03-02-data-types.html#data-types">“Data Types”</a><!-- ignore --> section
 of Chapter 3. The types covered previously are of a known size, can be stored
 on the stack and popped off the stack when their scope is over, and can be
 quickly and trivially copied to make a new, independent instance if another
@@ -3225,7 +3225,7 @@ clean up that data, and the <code>String</code> type is a great example.</p>
 <p>We’ll concentrate on the parts of <code>String</code> that relate to ownership. These
 aspects also apply to other complex data types, whether they are provided by
 the standard library or created by you. We’ll discuss <code>String</code> in more depth in
-<a href="ch08-02-strings.html">Chapter 8</a><!-- ignore -->.</p>
+<a href="https://rust-book.cs.brown.edu/ch08-02-strings.html">Chapter 8</a><!-- ignore -->.</p>
 <p>We’ve already seen string literals, where a string value is hardcoded into our
 program. String literals are convenient, but they aren’t suitable for every
 situation in which we may want to use text. One reason is that they’re
@@ -3241,9 +3241,9 @@ literal using the <code>from</code> function, like so:</p>
 <span class="boring">}</span></code></pre></pre>
 <p>The double colon <code>::</code> operator allows us to namespace this particular <code>from</code>
 function under the <code>String</code> type rather than using some sort of name like
-<code>string_from</code>. We’ll discuss this syntax more in the <a href="ch05-03-method-syntax.html#method-syntax">“Method
+<code>string_from</code>. We’ll discuss this syntax more in the <a href="https://rust-book.cs.brown.edu/ch05-03-method-syntax.html#method-syntax">“Method
 Syntax”</a><!-- ignore --> section of Chapter 5, and when we talk
-about namespacing with modules in <a href="ch07-03-paths-for-referring-to-an-item-in-the-module-tree.html">“Paths for Referring to an Item in the
+about namespacing with modules in <a href="https://rust-book.cs.brown.edu/ch07-03-paths-for-referring-to-an-item-in-the-module-tree.html">“Paths for Referring to an Item in the
 Module Tree”</a><!-- ignore --> in Chapter 7.</p>
 <p>This kind of string <em>can</em> be mutated:</p>
 <pre><code class="language-rust edition2021"><span class="boring">fn main() {
@@ -3493,14 +3493,14 @@ between deep and shallow copying here, so calling <code>clone</code> wouldn’t 
 different from the usual shallow copying, and we can leave it out.</p>
 <p>Rust has a special annotation called the <code>Copy</code> trait that we can place on
 types that are stored on the stack, as integers are (we’ll talk more about
-traits in <a href="ch10-02-traits.html">Chapter 10</a><!-- ignore -->). If a type implements the <code>Copy</code>
+traits in <a href="https://rust-book.cs.brown.edu/ch10-02-traits.html">Chapter 10</a><!-- ignore -->). If a type implements the <code>Copy</code>
 trait, variables that use it do not move, but rather are trivially copied,
 making them still valid after assignment to another variable.</p>
 <p>Rust won’t let us annotate a type with <code>Copy</code> if the type, or any of its parts,
 has implemented the <code>Drop</code> trait. If the type needs something special to happen
 when the value goes out of scope and we add the <code>Copy</code> annotation to that type,
 we’ll get a compile-time error. To learn about how to add the <code>Copy</code> annotation
-to your type to implement the trait, see <a href="appendix-03-derivable-traits.html">“Derivable
+to your type to implement the trait, see <a href="https://rust-book.cs.brown.edu/appendix-03-derivable-traits.html">“Derivable
 Traits”</a><!-- ignore --> in Appendix C.</p>
 <p>So, what types implement the <code>Copy</code> trait? You can check the documentation for
 the given type to be sure, but as a general rule, any group of simple scalar
@@ -3968,7 +3968,7 @@ number of immutable references.</li>
 <p>Next, we’ll look at a different kind of reference: slices.</p>
 <h2 id="the-slice-type"><a class="header" href="#the-slice-type">The Slice Type</a></h2>
 <p><em>Slices</em> let you reference a contiguous sequence of elements in a
-<a href="ch08-00-common-collections.html">collection</a> rather than the whole collection. A
+<a href="https://rust-book.cs.brown.edu/ch08-00-common-collections.html">collection</a> rather than the whole collection. A
 slice is a kind of reference, so it does not have ownership.</p>
 <p>Here’s a small programming problem: write a function that takes a string of
 words separated by spaces and returns the first word it finds in that string.
@@ -4028,14 +4028,14 @@ a value is a space, we’ll convert our <code>String</code> to an array of bytes
 </span><span class="boring">}
 </span><span class="boring">
 </span><span class="boring">fn main() {}</span></code></pre>
-<p>We’ll discuss iterators in more detail in <a href="ch13-02-iterators.html">Chapter 13</a><!-- ignore -->.
+<p>We’ll discuss iterators in more detail in <a href="https://rust-book.cs.brown.edu/ch13-02-iterators.html">Chapter 13</a><!-- ignore -->.
 For now, know that <code>iter</code> is a method that returns each element in a collection
 and that <code>enumerate</code> wraps the result of <code>iter</code> and returns each element as
 part of a tuple instead. The first element of the tuple returned from
 <code>enumerate</code> is the index, and the second element is a reference to the element.
 This is a bit more convenient than calculating the index ourselves.</p>
 <p>Because the <code>enumerate</code> method returns a tuple, we can use patterns to
-destructure that tuple. We’ll be discussing patterns more in <a href="ch06-02-match.html#patterns-that-bind-to-values">Chapter
+destructure that tuple. We’ll be discussing patterns more in <a href="https://rust-book.cs.brown.edu/ch06-02-match.html#patterns-that-bind-to-values">Chapter
 6</a><!-- ignore -->. In the <code>for</code> loop, we specify a pattern that has <code>i</code>
 for the index in the tuple and <code>&amp;item</code> for the single byte in the tuple.
 Because we get a reference to the element from <code>.iter().enumerate()</code>, we use
@@ -4162,7 +4162,7 @@ let slice = &amp;s[..];
 boundaries. If you attempt to create a string slice in the middle of a
 multibyte character, your program will exit with an error. For the purposes
 of introducing string slices, we are assuming ASCII only in this section; a
-more thorough discussion of UTF-8 handling is in the <a href="ch08-02-strings.html#storing-utf-8-encoded-text-with-strings">“Storing UTF-8 Encoded
+more thorough discussion of UTF-8 handling is in the <a href="https://rust-book.cs.brown.edu/ch08-02-strings.html#storing-utf-8-encoded-text-with-strings">“Storing UTF-8 Encoded
 Text with Strings”</a><!-- ignore --> section of Chapter 8.</p>
 </section>
 <p>With all this information in mind, let’s rewrite <code>first_word</code> to return a
@@ -4308,7 +4308,7 @@ and <code>&amp;str</code> values.</p>
 <p>If we have a string slice, we can pass that directly. If we have a <code>String</code>, we
 can pass a slice of the <code>String</code> or a reference to the <code>String</code>. This
 flexibility takes advantage of <em>deref coercions</em>, a feature we will cover in the
-<a href="ch15-02-deref.html#implicit-deref-coercions-with-functions-and-methods">“Implicit Deref Coercions with Functions and
+<a href="https://rust-book.cs.brown.edu/ch15-02-deref.html#implicit-deref-coercions-with-functions-and-methods">“Implicit Deref Coercions with Functions and
 Methods”</a><!--ignore--> section of Chapter 15.</p>
 <p>Defining a function to take a string slice instead of a reference to a <code>String</code>
 makes our API more general and useful without losing any functionality:</p>
@@ -4390,7 +4390,7 @@ define associated functions, especially the kind of associated functions called
 (discussed in Chapter 6) are the building blocks for creating new types in your
 program’s domain to take full advantage of Rust’s compile-time type checking.</p>
 <h2 id="defining-and-instantiating-structs"><a class="header" href="#defining-and-instantiating-structs">Defining and Instantiating Structs</a></h2>
-<p>Structs are similar to tuples, discussed in <a href="ch03-02-data-types.html#the-tuple-type">“The Tuple Type”</a><!--
+<p>Structs are similar to tuples, discussed in <a href="https://rust-book.cs.brown.edu/ch03-02-data-types.html#the-tuple-type">“The Tuple Type”</a><!--
 ignore --> section, in that both hold multiple related values. Like tuples, the
 pieces of a struct can be different types. Unlike with tuples, in a struct
 you’ll name each piece of data so it’s clear what the values mean. Adding these
@@ -4614,14 +4614,14 @@ corresponding fields in <code>user1</code>, but we can choose to specify values 
 many fields as we want in any order, regardless of the order of the fields in
 the struct’s definition.</p>
 <p>Note that the struct update syntax uses <code>=</code> like an assignment; this is because
-it moves the data, just as we saw in the <a href="ch04-01-what-is-ownership.html#variables-and-data-interacting-with-move">“Variables and Data Interacting with
+it moves the data, just as we saw in the <a href="https://rust-book.cs.brown.edu/ch04-01-what-is-ownership.html#variables-and-data-interacting-with-move">“Variables and Data Interacting with
 Move”</a><!-- ignore --> section. In this example, we can no longer use
 <code>user1</code> as a whole after creating <code>user2</code> because the <code>String</code> in the
 <code>username</code> field of <code>user1</code> was moved into <code>user2</code>. If we had given <code>user2</code> new
 <code>String</code> values for both <code>email</code> and <code>username</code>, and thus only used the
 <code>active</code> and <code>sign_in_count</code> values from <code>user1</code>, then <code>user1</code> would still be
 valid after creating <code>user2</code>. Both <code>active</code> and <code>sign_in_count</code> are types that
-implement the <code>Copy</code> trait, so the behavior we discussed in the <a href="ch04-01-what-is-ownership.html#stack-only-data-copy">“Stack-Only
+implement the <code>Copy</code> trait, so the behavior we discussed in the <a href="https://rust-book.cs.brown.edu/ch04-01-what-is-ownership.html#stack-only-data-copy">“Stack-Only
 Data: Copy”</a><!-- ignore --> section would apply. We can still use
 <code>user1.email</code> in this example, since its value was <em>not</em> moved out.</p>
 <h3 id="using-tuple-structs-without-named-fields-to-create-different-types"><a class="header" href="#using-tuple-structs-without-named-fields-to-create-different-types">Using Tuple Structs Without Named Fields to Create Different Types</a></h3>
@@ -4657,7 +4657,7 @@ example, we would write <code>let Point(x, y, z) = point</code>.</p>
 <h3 id="unit-like-structs-without-any-fields"><a class="header" href="#unit-like-structs-without-any-fields">Unit-Like Structs Without Any Fields</a></h3>
 <p>You can also define structs that don’t have any fields! These are called
 <em>unit-like structs</em> because they behave similarly to <code>()</code>, the unit type that
-we mentioned in <a href="ch03-02-data-types.html#the-tuple-type">“The Tuple Type”</a><!-- ignore --> section. Unit-like
+we mentioned in <a href="https://rust-book.cs.brown.edu/ch03-02-data-types.html#the-tuple-type">“The Tuple Type”</a><!-- ignore --> section. Unit-like
 structs can be useful when you need to implement a trait on some type but don’t
 have any data that you want to store in the type itself. We’ll discuss traits
 in Chapter 10. Here’s an example of declaring and instantiating a unit struct
@@ -4805,7 +4805,7 @@ and readable.</p>
 function we wrote has two parameters, and it’s not clear anywhere in our
 program that the parameters are related. It would be more readable and more
 manageable to group width and height together. We’ve already discussed one way
-we might do that in <a href="ch03-02-data-types.html#the-tuple-type">“The Tuple Type”</a><!-- ignore --> section
+we might do that in <a href="https://rust-book.cs.brown.edu/ch03-02-data-types.html#the-tuple-type">“The Tuple Type”</a><!-- ignore --> section
 of Chapter 3: by using tuples.</p>
 <h3 id="refactoring-with-tuples"><a class="header" href="#refactoring-with-tuples">Refactoring with Tuples</a></h3>
 <p>Listing 5-9 shows another version of our program that uses tuples.</p>
@@ -4984,7 +4984,7 @@ of that expression, and returns ownership of the value.</p>
 <p>Note: Calling the <code>dbg!</code> macro prints to the standard error console stream
 (<code>stderr</code>), as opposed to <code>println!</code>, which prints to the standard output
 console stream (<code>stdout</code>). We’ll talk more about <code>stderr</code> and <code>stdout</code> in the
-<a href="ch12-06-writing-to-stderr-instead-of-stdout.html">“Writing Error Messages to Standard Error Instead of Standard Output”
+<a href="https://rust-book.cs.brown.edu/ch12-06-writing-to-stderr-instead-of-stdout.html">“Writing Error Messages to Standard Error Instead of Standard Output”
 section in Chapter 12</a><!-- ignore -->.</p>
 </section>
 <p>Here’s an example where we’re interested in the value that gets assigned to the
@@ -5028,7 +5028,7 @@ the <code>Rectangle</code> struct. This output uses the pretty <code>Debug</code
 figure out what your code is doing!</p>
 <p>In addition to the <code>Debug</code> trait, Rust has provided a number of traits for us
 to use with the <code>derive</code> attribute that can add useful behavior to our custom
-types. Those traits and their behaviors are listed in <a href="appendix-03-derivable-traits.html">Appendix C</a><!--
+types. Those traits and their behaviors are listed in <a href="https://rust-book.cs.brown.edu/appendix-03-derivable-traits.html">Appendix C</a><!--
 ignore -->. We’ll cover how to implement these traits with custom behavior as
 well as how to create your own traits in Chapter 10. There are also many
 attributes other than <code>derive</code>; for more information, see <a href="../reference/attributes.html">the “Attributes”
@@ -5043,7 +5043,7 @@ defined on our <code>Rectangle</code> type.</p>
 name, they can have parameters and a return value, and they contain some code
 that’s run when the method is called from somewhere else. Unlike functions,
 methods are defined within the context of a struct (or an enum or a trait
-object, which we cover in <a href="ch06-00-enums.html">Chapter 6</a><!-- ignore --> and <a href="ch18-02-trait-objects.html">Chapter
+object, which we cover in <a href="https://rust-book.cs.brown.edu/ch06-00-enums.html">Chapter 6</a><!-- ignore --> and <a href="https://rust-book.cs.brown.edu/ch18-02-trait-objects.html">Chapter
 17</a><!-- ignore -->, respectively), and their first parameter is
 always <code>self</code>, which represents the instance of the struct the method is being
 called on.</p>
@@ -5151,7 +5151,7 @@ are called <em>getters</em>, and Rust does not implement them automatically for 
 fields as some other languages do. Getters are useful because you can make the
 field private but the method public, and thus enable read-only access to that
 field as part of the type’s public API. We will discuss what public and private
-are and how to designate a field or method as public or private in <a href="ch07-03-paths-for-referring-to-an-item-in-the-module-tree.html#exposing-paths-with-the-pub-keyword">Chapter
+are and how to designate a field or method as public or private in <a href="https://rust-book.cs.brown.edu/ch07-03-paths-for-referring-to-an-item-in-the-module-tree.html#exposing-paths-with-the-pub-keyword">Chapter
 7</a><!-- ignore -->.</p>
 <section class="note" aria-role="note">
 <h3 id="wheres-the---operator"><a class="header" href="#wheres-the---operator">Where’s the <code>-&gt;</code> Operator?</a></h3>
@@ -5322,7 +5322,7 @@ is <code>Rectangle</code>.</p>
 <p>To call this associated function, we use the <code>::</code> syntax with the struct name;
 <code>let sq = Rectangle::square(3);</code> is an example. This function is namespaced by
 the struct: the <code>::</code> syntax is used for both associated functions and
-namespaces created by modules. We’ll discuss modules in <a href="ch07-02-defining-modules-to-control-scope-and-privacy.html">Chapter
+namespaces created by modules. We’ll discuss modules in <a href="https://rust-book.cs.brown.edu/ch07-02-defining-modules-to-control-scope-and-privacy.html">Chapter
 7</a><!-- ignore -->.</p>
 <h3 id="multiple-impl-blocks"><a class="header" href="#multiple-impl-blocks">Multiple <code>impl</code> Blocks</a></h3>
 <p>Each struct is allowed to have multiple <code>impl</code> blocks. For example, Listing
@@ -5782,7 +5782,7 @@ matching value.</p>
 <p>Rust has an extremely powerful control flow construct called <code>match</code> that
 allows you to compare a value against a series of patterns and then execute
 code based on which pattern matches. Patterns can be made up of literal values,
-variable names, wildcards, and many other things; <a href="ch19-00-patterns.html">Chapter
+variable names, wildcards, and many other things; <a href="https://rust-book.cs.brown.edu/ch19-00-patterns.html">Chapter
 18</a><!-- ignore --> covers all the different kinds of patterns
 and what they do. The power of <code>match</code> comes from the expressiveness of the
 patterns and the fact that the compiler confirms that all possible cases are
@@ -6118,7 +6118,7 @@ can change our code to use <code>_</code> instead of the variable named <code>ot
 ignoring all other values in the last arm; we haven’t forgotten anything.</p>
 <p>Finally, we’ll change the rules of the game one more time so that nothing else
 happens on your turn if you roll anything other than a 3 or a 7. We can express
-that by using the unit value (the empty tuple type we mentioned in <a href="ch03-02-data-types.html#the-tuple-type">“The Tuple
+that by using the unit value (the empty tuple type we mentioned in <a href="https://rust-book.cs.brown.edu/ch03-02-data-types.html#the-tuple-type">“The Tuple
 Type”</a><!-- ignore --> section) as the code that goes with the <code>_</code> arm:</p>
 <pre><code class="language-rust edition2021"><span class="boring">fn main() {
 </span>    let dice_roll = 9;
@@ -6134,7 +6134,7 @@ Type”</a><!-- ignore --> section) as the code that goes with the <code>_</code
 <p>Here, we’re telling Rust explicitly that we aren’t going to use any other value
 that doesn’t match a pattern in an earlier arm, and we don’t want to run any
 code in this case.</p>
-<p>There’s more about patterns and matching that we’ll cover in <a href="ch19-00-patterns.html">Chapter
+<p>There’s more about patterns and matching that we’ll cover in <a href="https://rust-book.cs.brown.edu/ch19-00-patterns.html">Chapter
 19</a><!-- ignore -->. For now, we’re going to move on to the
 <code>if let</code> syntax, which can be useful in situations where the <code>match</code> expression
 is a bit wordy.</p>
@@ -6260,7 +6260,7 @@ optionally one library crate. As a package grows, you can extract parts into
 separate crates that become external dependencies. This chapter covers all
 these techniques. For very large projects comprising a set of interrelated
 packages that evolve together, Cargo provides <em>workspaces</em>, which we’ll cover
-in the <a href="ch14-03-cargo-workspaces.html">“Cargo Workspaces”</a><!-- ignore --> section in Chapter 14.</p>
+in the <a href="https://rust-book.cs.brown.edu/ch14-03-cargo-workspaces.html">“Cargo Workspaces”</a><!-- ignore --> section in Chapter 14.</p>
 <p>We’ll also discuss encapsulating implementation details, which lets you reuse
 code at a higher level: once you’ve implemented an operation, other code can
 call your code via its public interface without having to know how the
@@ -6304,13 +6304,13 @@ such as a command-line program or a server. Each must have a function called
 created so far have been binary crates.</p>
 <p><em>Library crates</em> don’t have a <code>main</code> function, and they don’t compile to an
 executable. Instead, they define functionality intended to be shared with
-multiple projects. For example, the <code>rand</code> crate we used in <a href="ch02-00-guessing-game-tutorial.html#generating-a-random-number">Chapter
+multiple projects. For example, the <code>rand</code> crate we used in <a href="https://rust-book.cs.brown.edu/ch02-00-guessing-game-tutorial.html#generating-a-random-number">Chapter
 2</a><!-- ignore --> provides functionality that generates random numbers.
 Most of the time when Rustaceans say “crate”, they mean library crate, and they
 use “crate” interchangeably with the general programming concept of a “library”.</p>
 <p>The <em>crate root</em> is a source file that the Rust compiler starts from and makes
 up the root module of your crate (we’ll explain modules in depth in the
-<a href="ch07-02-defining-modules-to-control-scope-and-privacy.html">“Defining Modules to Control Scope and Privacy”</a><!-- ignore -->
+<a href="https://rust-book.cs.brown.edu/ch07-02-defining-modules-to-control-scope-and-privacy.html">“Defining Modules to Control Scope and Privacy”</a><!-- ignore -->
 section).</p>
 <p>A <em>package</em> is a bundle of one or more crates that provides a set of
 functionality. A package contains a <em>Cargo.toml</em> file that describes how to
@@ -6532,7 +6532,7 @@ removed.</p>
 there’s another problem remaining that will prevent this example from compiling
 as is. We’ll explain why in a bit.</p>
 <p>The <code>eat_at_restaurant</code> function is part of our library crate’s public API, so
-we mark it with the <code>pub</code> keyword. In the <a href="ch07-03-paths-for-referring-to-an-item-in-the-module-tree.html#exposing-paths-with-the-pub-keyword">“Exposing Paths with the <code>pub</code>
+we mark it with the <code>pub</code> keyword. In the <a href="https://rust-book.cs.brown.edu/ch07-03-paths-for-referring-to-an-item-in-the-module-tree.html#exposing-paths-with-the-pub-keyword">“Exposing Paths with the <code>pub</code>
 Keyword”</a><!-- ignore --> section, we’ll go into more detail about <code>pub</code>.</p>
 <figure class="listing">
 <span class="file-name">Filename: src/lib.rs</span>
@@ -6759,7 +6759,7 @@ The binary crate becomes a user of the library crate just like a completely
 external crate would use the library crate: it can only use the public API.
 This helps you design a good API; not only are you the author, you’re also a
 client!</p>
-<p>In <a href="ch12-00-an-io-project.html">Chapter 12</a><!-- ignore -->, we’ll demonstrate this organizational
+<p>In <a href="https://rust-book.cs.brown.edu/ch12-00-an-io-project.html">Chapter 12</a><!-- ignore -->, we’ll demonstrate this organizational
 practice with a command-line program that will contain both a binary crate
 and a library crate.</p>
 </section>
@@ -7089,7 +7089,7 @@ probably won’t think about the parts of the restaurant in those terms. With
 <code>pub use</code>, we can write our code with one structure but expose a different
 structure. Doing so makes our library well organized for programmers working on
 the library and programmers calling the library. We’ll look at another example
-of <code>pub use</code> and how it affects your crate’s documentation in the <a href="ch14-02-publishing-to-crates-io.html#exporting-a-convenient-public-api-with-pub-use">“Exporting a
+of <code>pub use</code> and how it affects your crate’s documentation in the <a href="https://rust-book.cs.brown.edu/ch14-02-publishing-to-crates-io.html#exporting-a-convenient-public-api-with-pub-use">“Exporting a
 Convenient Public API with <code>pub use</code>”</a><!-- ignore --> section of
 Chapter 14.</p>
 <h3 id="using-external-packages"><a class="header" href="#using-external-packages">Using External Packages</a></h3>
@@ -7111,7 +7111,7 @@ added this line to <em>Cargo.toml</em>:</p>
 make <code>rand</code> available to our project.</p>
 <p>Then, to bring <code>rand</code> definitions into the scope of our package, we added a
 <code>use</code> line starting with the name of the crate, <code>rand</code>, and listed the items
-we wanted to bring into scope. Recall that in the <a href="ch02-00-guessing-game-tutorial.html#generating-a-random-number">“Generating a Random
+we wanted to bring into scope. Recall that in the <a href="https://rust-book.cs.brown.edu/ch02-00-guessing-game-tutorial.html#generating-a-random-number">“Generating a Random
 Number”</a><!-- ignore --> section in Chapter 2, we brought the <code>Rng</code> trait
 into scope and called the <code>rand::thread_rng</code> function:</p>
 <pre><code class="language-rust ignore"><span class="boring">use std::io;
@@ -7258,7 +7258,7 @@ the current scope. Be careful when using the glob operator! Glob can make it
 harder to tell what names are in scope and where a name used in your program
 was defined.</p>
 <p>The glob operator is often used when testing to bring everything under test
-into the <code>tests</code> module; we’ll talk about that in the <a href="ch11-01-writing-tests.html#how-to-write-tests">“How to Write
+into the <code>tests</code> module; we’ll talk about that in the <a href="https://rust-book.cs.brown.edu/ch11-01-writing-tests.html#how-to-write-tests">“How to Write
 Tests”</a><!-- ignore --> section in Chapter 11. The glob operator
 is also sometimes used as part of the prelude pattern: see <a href="../std/prelude/index.html#other-preludes">the standard
 library documentation</a><!-- ignore -->
@@ -7303,7 +7303,7 @@ with the name <code>front_of_house</code>.</p>
 module tree. Once the compiler knows the file is part of the project (and knows
 where in the module tree the code resides because of where you’ve put the <code>mod</code>
 statement), other files in your project should refer to the loaded file’s code
-using a path to where it was declared, as covered in the <a href="ch07-03-paths-for-referring-to-an-item-in-the-module-tree.html">“Paths for Referring
+using a path to where it was declared, as covered in the <a href="https://rust-book.cs.brown.edu/ch07-03-paths-for-referring-to-an-item-in-the-module-tree.html">“Paths for Referring
 to an Item in the Module Tree”</a><!-- ignore --> section. In other words,
 <code>mod</code> is <em>not</em> an “include” operation that you may have seen in other
 programming languages.</p>
@@ -7418,7 +7418,7 @@ the type of value you want to store, so you rarely need to do this type
 annotation. Rust conveniently provides the <code>vec!</code> macro, which will create a
 new vector that holds the values you give it. Listing 8-2 creates a new
 <code>Vec&lt;i32&gt;</code> that holds the values <code>1</code>, <code>2</code>, and <code>3</code>. The integer type is <code>i32</code>
-because that’s the default integer type, as we discussed in the <a href="ch03-02-data-types.html#data-types">“Data
+because that’s the default integer type, as we discussed in the <a href="https://rust-book.cs.brown.edu/ch03-02-data-types.html#data-types">“Data
 Types”</a><!-- ignore --> section of Chapter 3.</p>
 <figure class="listing">
 <pre><code class="language-rust edition2021"><span class="boring">fn main() {
@@ -7580,7 +7580,7 @@ will add <code>50</code> to each element.</p>
 </figure>
 <p>To change the value that the mutable reference refers to, we have to use the
 <code>*</code> dereference operator to get to the value in <code>i</code> before we can use the <code>+=</code>
-operator. We’ll talk more about the dereference operator in the <a href="ch15-02-deref.html#following-the-pointer-to-the-value-with-the-dereference-operator">“Following the
+operator. We’ll talk more about the dereference operator in the <a href="https://rust-book.cs.brown.edu/ch15-02-deref.html#following-the-pointer-to-the-value-with-the-dereference-operator">“Following the
 Pointer to the Value with the Dereference Operator”</a><!-- ignore -->
 section of Chapter 15.</p>
 <p>Iterating over a vector, whether immutably or mutably, is safe because of the
@@ -8142,7 +8142,7 @@ they’ve been moved into the hash map with the call to <code>insert</code>.</p>
 <p>If we insert references to values into the hash map, the values won’t be moved
 into the hash map. The values that the references point to must be valid for at
 least as long as the hash map is valid. We’ll talk more about these issues in
-the <a href="ch10-03-lifetime-syntax.html#validating-references-with-lifetimes">“Validating References with
+the <a href="https://rust-book.cs.brown.edu/ch10-03-lifetime-syntax.html#validating-references-with-lifetimes">“Validating References with
 Lifetimes”</a><!-- ignore --> section in
 Chapter 10.</p>
 <h3 id="updating-a-hash-map"><a class="header" href="#updating-a-hash-map">Updating a Hash Map</a></h3>
@@ -8240,7 +8240,7 @@ the value <code>0</code>.</p>
 </figure>
 <p>This code will print <code>{"world": 2, "hello": 1, "wonderful": 1}</code>. You might see
 the same key–value pairs printed in a different order: recall from the
-<a href="ch08-03-hash-maps.html#accessing-values-in-a-hash-map">“Accessing Values in a Hash Map”</a><!-- ignore --> section that
+<a href="https://rust-book.cs.brown.edu/ch08-03-hash-maps.html#accessing-values-in-a-hash-map">“Accessing Values in a Hash Map”</a><!-- ignore --> section that
 iterating over a hash map happens in an arbitrary order.</p>
 <p>The <code>split_whitespace</code> method returns an iterator over subslices, separated by
 whitespace, of the value in <code>text</code>. The <code>or_insert</code> method returns a mutable
@@ -8258,7 +8258,7 @@ performance is worth it. If you profile your code and find that the default
 hash function is too slow for your purposes, you can switch to another function
 by specifying a different hasher. A <em>hasher</em> is a type that implements the
 <code>BuildHasher</code> trait. We’ll talk about traits and how to implement them in
-<a href="ch10-02-traits.html">Chapter 10</a><!-- ignore -->. You don’t necessarily have to implement
+<a href="https://rust-book.cs.brown.edu/ch10-02-traits.html">Chapter 10</a><!-- ignore -->. You don’t necessarily have to implement
 your own hasher from scratch; <a href="https://crates.io/">crates.io</a><!-- ignore -->
 has libraries shared by other Rust users that provide hashers implementing many
 common hashing algorithms.</p>
@@ -8457,7 +8457,7 @@ request an element beyond the range of the vector indexes. When your code
 panics in the future, you’ll need to figure out what action the code is taking
 with what values to cause the panic and what the code should do instead.</p>
 <p>We’ll come back to <code>panic!</code> and when we should and should not use <code>panic!</code> to
-handle error conditions in the <a href="ch09-03-to-panic-or-not-to-panic.html#to-panic-or-not-to-panic">“To <code>panic!</code> or Not to
+handle error conditions in the <a href="https://rust-book.cs.brown.edu/ch09-03-to-panic-or-not-to-panic.html#to-panic-or-not-to-panic">“To <code>panic!</code> or Not to
 <code>panic!</code>”</a><!-- ignore --> section later in this
 chapter. Next, we’ll look at how to recover from an error using <code>Result</code>.</p>
 <h2 id="recoverable-errors-with-result"><a class="header" href="#recoverable-errors-with-result">Recoverable Errors with <code>Result</code></a></h2>
@@ -8466,7 +8466,7 @@ Sometimes when a function fails it’s for a reason that you can easily interpre
 and respond to. For example, if you try to open a file and that operation fails
 because the file doesn’t exist, you might want to create the file instead of
 terminating the process.</p>
-<p>Recall from <a href="ch02-00-guessing-game-tutorial.html#handling-potential-failure-with-result">“Handling Potential Failure with <code>Result</code>”</a><!--
+<p>Recall from <a href="https://rust-book.cs.brown.edu/ch02-00-guessing-game-tutorial.html#handling-potential-failure-with-result">“Handling Potential Failure with <code>Result</code>”</a><!--
 ignore --> in Chapter 2 that the <code>Result</code> enum is defined as having two
 variants, <code>Ok</code> and <code>Err</code>, as follows:</p>
 <pre><code class="language-rust edition2021"><span class="boring">#![allow(unused)]
@@ -8991,7 +8991,7 @@ fn main() -&gt; Result&lt;(), Box&lt;dyn Error&gt;&gt; {
 <figcaption>Listing 9-12: Changing <code>main</code> to return <code>Result&lt;(), E&gt;</code> allows the use of the <code>?</code> operator on <code>Result</code> values.</figcaption>
 </figure>
 <p>The <code>Box&lt;dyn Error&gt;</code> type is a <em>trait object</em>, which we’ll talk about in the
-<a href="ch18-02-trait-objects.html#using-trait-objects-that-allow-for-values-of-different-types">“Using Trait Objects that Allow for Values of Different
+<a href="https://rust-book.cs.brown.edu/ch18-02-trait-objects.html#using-trait-objects-that-allow-for-values-of-different-types">“Using Trait Objects that Allow for Values of Different
 Types”</a><!-- ignore --> section in Chapter 18. For now, you can
 read <code>Box&lt;dyn Error&gt;</code> to mean “any kind of error.” Using <code>?</code> on a <code>Result</code>
 value in a <code>main</code> function with the error type <code>Box&lt;dyn Error&gt;</code> is allowed
@@ -9084,7 +9084,7 @@ format.</li>
 <li>Your code after this point needs to rely on not being in this bad state,
 rather than checking for the problem at every step.</li>
 <li>There’s not a good way to encode this information in the types you use. We’ll
-work through an example of what we mean in the <a href="ch18-03-oo-design-patterns.html#encoding-states-and-behavior-as-types">“Encoding States and Behavior
+work through an example of what we mean in the <a href="https://rust-book.cs.brown.edu/ch18-03-oo-design-patterns.html#encoding-states-and-behavior-as-types">“Encoding States and Behavior
 as Types”</a><!-- ignore --> section of Chapter 18.</li>
 </ul>
 <p>If someone calls your code and passes in values that don’t make sense, it’s
@@ -10305,7 +10305,7 @@ return type specified as <code>impl Summary</code> wouldn’t work:</p>
 }</code></pre>
 <p>Returning either a <code>NewsArticle</code> or a <code>Tweet</code> isn’t allowed due to restrictions
 around how the <code>impl Trait</code> syntax is implemented in the compiler. We’ll cover
-how to write a function with this behavior in the <a href="ch18-02-trait-objects.html#using-trait-objects-that-allow-for-values-of-different-types">“Using Trait Objects That
+how to write a function with this behavior in the <a href="https://rust-book.cs.brown.edu/ch18-02-trait-objects.html#using-trait-objects-that-allow-for-values-of-different-types">“Using Trait Objects That
 Allow for Values of Different
 Types”</a><!--
 ignore --> section of Chapter 18.</p>
@@ -10314,7 +10314,7 @@ ignore --> section of Chapter 18.</p>
 we can implement methods conditionally for types that implement the specified
 traits. For example, the type <code>Pair&lt;T&gt;</code> in Listing 10-15 always implements the
 <code>new</code> function to return a new instance of <code>Pair&lt;T&gt;</code> (recall from the
-<a href="ch05-03-method-syntax.html#defining-methods">“Defining Methods”</a><!-- ignore --> section of Chapter 5 that <code>Self</code>
+<a href="https://rust-book.cs.brown.edu/ch05-03-method-syntax.html#defining-methods">“Defining Methods”</a><!-- ignore --> section of Chapter 5 that <code>Self</code>
 is a type alias for the type of the <code>impl</code> block, which in this case is
 <code>Pair&lt;T&gt;</code>). But in the next <code>impl</code> block, <code>Pair&lt;T&gt;</code> only implements the
 <code>cmp_display</code> method if its inner type <code>T</code> implements the <code>PartialOrd</code> trait
@@ -10379,7 +10379,7 @@ of generics.</p>
 <p>Lifetimes are another kind of generic that we’ve already been using. Rather
 than ensuring that a type has the behavior we want, lifetimes ensure that
 references are valid as long as we need them to be.</p>
-<p>One detail we didn’t discuss in the <a href="ch04-02-references-and-borrowing.html#references-and-borrowing">“References and
+<p>One detail we didn’t discuss in the <a href="https://rust-book.cs.brown.edu/ch04-02-references-and-borrowing.html#references-and-borrowing">“References and
 Borrowing”</a><!-- ignore --> section in Chapter 4 is
 that every reference in Rust has a <em>lifetime</em>, which is the scope for which
 that reference is valid. Most of the time, lifetimes are implicit and inferred,
@@ -10509,7 +10509,7 @@ print <code>The longest string is abcd</code>.</p>
 </figure>
 <p>Note that we want the function to take string slices, which are references,
 rather than strings, because we don’t want the <code>longest</code> function to take
-ownership of its parameters. Refer to the <a href="ch04-03-slices.html#string-slices-as-parameters">“String Slices as
+ownership of its parameters. Refer to the <a href="https://rust-book.cs.brown.edu/ch04-03-slices.html#string-slices-as-parameters">“String Slices as
 Parameters”</a><!-- ignore --> section in Chapter 4
 for more discussion about why the parameters we use in Listing 10-19 are the
 ones we want.</p>
@@ -11222,7 +11222,7 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 line shows the name of the generated test function, called <code>tests::it_works</code>,
 and that the result of running that test is <code>ok</code>. The overall summary <code>test result: ok.</code> means that all the tests passed, and the portion that reads <code>1 passed; 0 failed</code> totals the number of tests that passed or failed.</p>
 <p>It’s possible to mark a test as ignored so it doesn’t run in a particular
-instance; we’ll cover that in the <a href="ch11-02-running-tests.html#ignoring-some-tests-unless-specifically-requested">“Ignoring Some Tests Unless Specifically
+instance; we’ll cover that in the <a href="https://rust-book.cs.brown.edu/ch11-02-running-tests.html#ignoring-some-tests-unless-specifically-requested">“Ignoring Some Tests Unless Specifically
 Requested”</a><!-- ignore --> section later in this chapter. Because we
 haven’t done that here, the summary shows <code>0 ignored</code>.</p>
 <p>The <code>0 measured</code> statistic is for benchmark tests that measure performance.
@@ -11230,13 +11230,13 @@ Benchmark tests are, as of this writing, only available in nightly Rust. See
 <a href="../unstable-book/library-features/test.html">the documentation about benchmark tests</a> to learn more.</p>
 <p>We can pass an argument to the <code>cargo test</code> command to run only tests whose
 name matches a string; this is called <em>filtering</em> and we’ll cover that in the
-<a href="ch11-02-running-tests.html#running-a-subset-of-tests-by-name">“Running a Subset of Tests by Name”</a><!-- ignore --> section. Here we
+<a href="https://rust-book.cs.brown.edu/ch11-02-running-tests.html#running-a-subset-of-tests-by-name">“Running a Subset of Tests by Name”</a><!-- ignore --> section. Here we
 haven’t filtered the tests being run, so the end of the summary shows <code>0 filtered out</code>.</p>
 <p>The next part of the test output starting at <code>Doc-tests adder</code> is for the
 results of any documentation tests. We don’t have any documentation tests yet,
 but Rust can compile any code examples that appear in our API documentation.
 This feature helps keep your docs and your code in sync! We’ll discuss how to
-write documentation tests in the <a href="ch14-02-publishing-to-crates-io.html#documentation-comments-as-tests">“Documentation Comments as
+write documentation tests in the <a href="https://rust-book.cs.brown.edu/ch14-02-publishing-to-crates-io.html#documentation-comments-as-tests">“Documentation Comments as
 Tests”</a><!-- ignore --> section of Chapter 14. For now, we’ll
 ignore the <code>Doc-tests</code> output.</p>
 <p>Let’s start to customize the test to our own needs. First, change the name of
@@ -11345,7 +11345,7 @@ line 17 in the <em>src/lib.rs</em> file. The next section lists just the names o
 the failing tests, which is useful when there are lots of tests and lots of
 detailed failing test output. We can use the name of a failing test to run just
 that test to more easily debug it; we’ll talk more about ways to run tests in
-the <a href="ch11-02-running-tests.html#controlling-how-tests-are-run">“Controlling How Tests Are Run”</a><!-- ignore
+the <a href="https://rust-book.cs.brown.edu/ch11-02-running-tests.html#controlling-how-tests-are-run">“Controlling How Tests Are Run”</a><!-- ignore
 --> section.</p>
 <p>The summary line displays at the end: overall, our test result is <code>FAILED</code>. We
 had one test pass and one test fail.</p>
@@ -11417,7 +11417,7 @@ mod tests {
 </figure>
 <p>Note the <code>use super::*;</code> line inside the <code>tests</code> module. The <code>tests</code> module is
 a regular module that follows the usual visibility rules we covered in Chapter
-7 in the <a href="ch07-03-paths-for-referring-to-an-item-in-the-module-tree.html">“Paths for Referring to an Item in the Module
+7 in the <a href="https://rust-book.cs.brown.edu/ch07-03-paths-for-referring-to-an-item-in-the-module-tree.html">“Paths for Referring to an Item in the Module
 Tree”</a><!-- ignore -->
 section. Because the <code>tests</code> module is an inner module, we need to bring the
 code under test in the outer module into the scope of the inner module. We use
@@ -11715,13 +11715,13 @@ those types. You’ll also need to implement <code>Debug</code> to print the val
 assertion fails. Because both traits are derivable traits, as mentioned in
 Listing 5-12 in Chapter 5, this is usually as straightforward as adding the
 <code>#[derive(PartialEq, Debug)]</code> annotation to your struct or enum definition. See
-Appendix C, <a href="appendix-03-derivable-traits.html">“Derivable Traits,”</a><!-- ignore --> for more
+Appendix C, <a href="https://rust-book.cs.brown.edu/appendix-03-derivable-traits.html">“Derivable Traits,”</a><!-- ignore --> for more
 details about these and other derivable traits.</p>
 <h3 id="adding-custom-failure-messages"><a class="header" href="#adding-custom-failure-messages">Adding Custom Failure Messages</a></h3>
 <p>You can also add a custom message to be printed with the failure message as
 optional arguments to the <code>assert!</code>, <code>assert_eq!</code>, and <code>assert_ne!</code> macros. Any
 arguments specified after the required arguments are passed along to the
-<code>format!</code> macro (discussed in Chapter 8 in the <a href="ch08-02-strings.html#concatenation-with-the--operator-or-the-format-macro">“Concatenation with the <code>+</code>
+<code>format!</code> macro (discussed in Chapter 8 in the <a href="https://rust-book.cs.brown.edu/ch08-02-strings.html#concatenation-with-the--operator-or-the-format-macro">“Concatenation with the <code>+</code>
 Operator or the <code>format!</code>
 Macro”</a><!-- ignore -->
 section), so you can pass a format string that contains <code>{}</code> placeholders and
@@ -12490,7 +12490,7 @@ mod tests {
 </figure>
 <p>Note that the <code>internal_adder</code> function is not marked as <code>pub</code>. Tests are just
 Rust code, and the <code>tests</code> module is just another module. As we discussed in
-the <a href="ch07-03-paths-for-referring-to-an-item-in-the-module-tree.html">“Paths for Referring to an Item in the Module Tree”</a><!-- ignore -->
+the <a href="https://rust-book.cs.brown.edu/ch07-03-paths-for-referring-to-an-item-in-the-module-tree.html">“Paths for Referring to an Item in the Module Tree”</a><!-- ignore -->
 section, items in child modules can use the items in their ancestor modules. In
 this test, we bring all of the <code>tests</code> module’s parent’s items into scope with
 <code>use super::*</code>, and then the test can call <code>internal_adder</code>. If you don’t think
@@ -12601,7 +12601,7 @@ share the same behavior as files in <em>src</em> do, as you learned in Chapter 7
 regarding how to separate code into modules and files.</p>
 <p>The different behavior of <em>tests</em> directory files is most noticeable when you
 have a set of helper functions to use in multiple integration test files and
-you try to follow the steps in the <a href="ch07-05-separating-modules-into-different-files.html">“Separating Modules into Different
+you try to follow the steps in the <a href="https://rust-book.cs.brown.edu/ch07-05-separating-modules-into-different-files.html">“Separating Modules into Different
 Files”</a><!-- ignore --> section of Chapter 7 to
 extract them into a common module. For example, if we create <em>tests/common.rs</em>
 and place a function named <code>setup</code> in it, we can add some code to <code>setup</code> that
@@ -12658,7 +12658,7 @@ project directory now looks like this:</p>
     └── integration_test.rs
 </code></pre>
 <p>This is the older naming convention that Rust also understands that we
-mentioned in the <a href="ch07-05-separating-modules-into-different-files.html#alternate-file-paths">“Alternate File Paths”</a><!-- ignore --> section of
+mentioned in the <a href="https://rust-book.cs.brown.edu/ch07-05-separating-modules-into-different-files.html#alternate-file-paths">“Alternate File Paths”</a><!-- ignore --> section of
 Chapter 7. Naming the file this way tells Rust not to treat the <code>common</code> module
 as an integration test file. When we move the <code>setup</code> function code into
 <em>tests/common/mod.rs</em> and delete the <em>tests/common.rs</em> file, the section in the
@@ -12732,14 +12732,14 @@ background knowledge you need to understand a real-world project such as
 <code>ripgrep</code>.</p>
 <p>Our <code>grep</code> project will combine a number of concepts you’ve learned so far:</p>
 <ul>
-<li>Organizing code (<a href="ch07-00-managing-growing-projects-with-packages-crates-and-modules.html">Chapter 7</a><!-- ignore -->)</li>
-<li>Using vectors and strings (<a href="ch08-00-common-collections.html">Chapter 8</a><!-- ignore -->)</li>
-<li>Handling errors (<a href="ch09-00-error-handling.html">Chapter 9</a><!-- ignore -->)</li>
-<li>Using traits and lifetimes where appropriate (<a href="ch10-00-generics.html">Chapter 10</a><!-- ignore -->)</li>
-<li>Writing tests (<a href="ch11-00-testing.html">Chapter 11</a><!-- ignore -->)</li>
+<li>Organizing code (<a href="https://rust-book.cs.brown.edu/ch07-00-managing-growing-projects-with-packages-crates-and-modules.html">Chapter 7</a><!-- ignore -->)</li>
+<li>Using vectors and strings (<a href="https://rust-book.cs.brown.edu/ch08-00-common-collections.html">Chapter 8</a><!-- ignore -->)</li>
+<li>Handling errors (<a href="https://rust-book.cs.brown.edu/ch09-00-error-handling.html">Chapter 9</a><!-- ignore -->)</li>
+<li>Using traits and lifetimes where appropriate (<a href="https://rust-book.cs.brown.edu/ch10-00-generics.html">Chapter 10</a><!-- ignore -->)</li>
+<li>Writing tests (<a href="https://rust-book.cs.brown.edu/ch11-00-testing.html">Chapter 11</a><!-- ignore -->)</li>
 </ul>
 <p>We’ll also briefly introduce closures, iterators, and trait objects, which
-<a href="ch13-00-functional-features.html">Chapter 13</a><!-- ignore --> and <a href="ch18-00-oop.html">Chapter 18</a><!-- ignore --> will
+<a href="https://rust-book.cs.brown.edu/ch13-00-functional-features.html">Chapter 13</a><!-- ignore --> and <a href="https://rust-book.cs.brown.edu/ch18-00-oop.html">Chapter 18</a><!-- ignore --> will
 cover in detail.</p>
 <h2 id="accepting-command-line-arguments"><a class="header" href="#accepting-command-line-arguments">Accepting Command Line Arguments</a></h2>
 <p>Let’s create a new project with, as always, <code>cargo new</code>. We’ll call our project
@@ -12764,7 +12764,7 @@ just learning this concept, let’s implement this capability ourselves.</p>
 <p>To enable <code>minigrep</code> to read the values of command line arguments we pass to
 it, we’ll need the <code>std::env::args</code> function provided in Rust’s standard
 library. This function returns an iterator of the command line arguments passed
-to <code>minigrep</code>. We’ll cover iterators fully in <a href="ch13-00-functional-features.html">Chapter 13</a><!-- ignore
+to <code>minigrep</code>. We’ll cover iterators fully in <a href="https://rust-book.cs.brown.edu/ch13-00-functional-features.html">Chapter 13</a><!-- ignore
 -->. For now, you only need to know two details about iterators: iterators
 produce a series of values, and we can call the <code>collect</code> method on an iterator
 to turn it into a collection, such as a vector, that contains all the elements
@@ -12783,7 +12783,7 @@ fn main() {
 </figure>
 <p>First we bring the <code>std::env</code> module into scope with a <code>use</code> statement so we
 can use its <code>args</code> function. Notice that the <code>std::env::args</code> function is
-nested in two levels of modules. As we discussed in <a href="ch07-04-bringing-paths-into-scope-with-the-use-keyword.html#creating-idiomatic-use-paths">Chapter
+nested in two levels of modules. As we discussed in <a href="https://rust-book.cs.brown.edu/ch07-04-bringing-paths-into-scope-with-the-use-keyword.html#creating-idiomatic-use-paths">Chapter
 7</a><!-- ignore -->, in cases where the desired function is
 nested in more than one module, we’ve chosen to bring the parent module into
 scope rather than the function. By doing so, we can easily use other functions
@@ -13127,7 +13127,7 @@ giving up a little performance to gain simplicity is a worthwhile trade-off.</p>
 <h3 id="the-trade-offs-of-using-clone"><a class="header" href="#the-trade-offs-of-using-clone">The Trade-Offs of Using <code>clone</code></a></h3>
 <p>There’s a tendency among many Rustaceans to avoid using <code>clone</code> to fix
 ownership problems because of its runtime cost. In
-<a href="ch13-00-functional-features.html">Chapter 13</a><!-- ignore -->, you’ll learn how to use more efficient
+<a href="https://rust-book.cs.brown.edu/ch13-00-functional-features.html">Chapter 13</a><!-- ignore -->, you’ll learn how to use more efficient
 methods in this type of situation. But for now, it’s okay to copy a few
 strings to continue making progress because you’ll make these copies only
 once and your file path and query string are very small. It’s better to have
@@ -13261,7 +13261,7 @@ long enough, the program panics and displays a better error message.</p>
 </span><span class="boring">}</span></code></pre>
 <figcaption>Listing 12-8: Adding a check for the number of arguments</figcaption>
 </figure>
-<p>This code is similar to <a href="ch09-03-to-panic-or-not-to-panic.html#creating-custom-types-for-validation">the <code>Guess::new</code> function we wrote in Listing
+<p>This code is similar to <a href="https://rust-book.cs.brown.edu/ch09-03-to-panic-or-not-to-panic.html#creating-custom-types-for-validation">the <code>Guess::new</code> function we wrote in Listing
 9-13</a><!-- ignore -->, where we called <code>panic!</code> when the
 <code>value</code> argument was out of the range of valid values. Instead of checking for
 a range of values here, we’re checking that the length of <code>args</code> is at least
@@ -13282,8 +13282,8 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 have extraneous information we don’t want to give to our users. Perhaps the
 technique we used in Listing 9-13 isn’t the best one to use here: a call to
 <code>panic!</code> is more appropriate for a programming problem than a usage problem,
-<a href="ch09-03-to-panic-or-not-to-panic.html#guidelines-for-error-handling">as discussed in Chapter 9</a><!-- ignore -->. Instead,
-we’ll use the other technique you learned about in Chapter 9—<a href="ch09-02-recoverable-errors-with-result.html">returning a
+<a href="https://rust-book.cs.brown.edu/ch09-03-to-panic-or-not-to-panic.html#guidelines-for-error-handling">as discussed in Chapter 9</a><!-- ignore -->. Instead,
+we’ll use the other technique you learned about in Chapter 9—<a href="https://rust-book.cs.brown.edu/ch09-02-recoverable-errors-with-result.html">returning a
 <code>Result</code></a><!-- ignore --> that indicates either success or an error.</p>
 <!-- Old headings. Do not remove or links may break. -->
 <p><a id="returning-a-result-from-new-instead-of-calling-panic"></a></p>
@@ -13407,7 +13407,7 @@ handling. If the <code>Result</code> is an <code>Ok</code> value, this method’
 to <code>unwrap</code>: it returns the inner value that <code>Ok</code> is wrapping. However, if the
 value is an <code>Err</code> value, this method calls the code in the <em>closure</em>, which is
 an anonymous function we define and pass as an argument to <code>unwrap_or_else</code>.
-We’ll cover closures in more detail in <a href="ch13-00-functional-features.html">Chapter 13</a><!-- ignore -->. For
+We’ll cover closures in more detail in <a href="https://rust-book.cs.brown.edu/ch13-00-functional-features.html">Chapter 13</a><!-- ignore -->. For
 now, you just need to know that <code>unwrap_or_else</code> will pass the inner value of
 the <code>Err</code>, which in this case is the static string <code>"not enough arguments"</code>
 that we added in Listing 12-9, to our closure in the argument <code>err</code> that
@@ -13429,7 +13429,7 @@ Problem parsing arguments: not enough arguments
 <p>Great! This output is much friendlier for our users.</p>
 <h3 id="extracting-logic-from-main"><a class="header" href="#extracting-logic-from-main">Extracting Logic from <code>main</code></a></h3>
 <p>Now that we’ve finished refactoring the configuration parsing, let’s turn to
-the program’s logic. As we stated in <a href="ch12-03-improving-error-handling-and-modularity.html#separation-of-concerns-for-binary-projects">“Separation of Concerns for Binary
+the program’s logic. As we stated in <a href="https://rust-book.cs.brown.edu/ch12-03-improving-error-handling-and-modularity.html#separation-of-concerns-for-binary-projects">“Separation of Concerns for Binary
 Projects”</a><!-- ignore -->, we’ll
 extract a function named <code>run</code> that will hold all the logic currently in the
 <code>main</code> function that isn’t involved with setting up configuration or handling
@@ -13556,14 +13556,14 @@ returned the unit type, <code>()</code>, and we keep that as the value returned 
 <code>Ok</code> case.</p>
 <p>For the error type, we used the <em>trait object</em> <code>Box&lt;dyn Error&gt;</code> (and we’ve
 brought <code>std::error::Error</code> into scope with a <code>use</code> statement at the top).
-We’ll cover trait objects in <a href="ch18-00-oop.html">Chapter 18</a><!-- ignore -->. For now, just
+We’ll cover trait objects in <a href="https://rust-book.cs.brown.edu/ch18-00-oop.html">Chapter 18</a><!-- ignore -->. For now, just
 know that <code>Box&lt;dyn Error&gt;</code> means the function will return a type that
 implements the <code>Error</code> trait, but we don’t have to specify what particular type
 the return value will be. This gives us flexibility to return error values that
 may be of different types in different error cases. The <code>dyn</code> keyword is short
 for <em>dynamic</em>.</p>
 <p>Second, we’ve removed the call to <code>expect</code> in favor of the <code>?</code> operator, as we
-talked about in <a href="ch09-02-recoverable-errors-with-result.html#a-shortcut-for-propagating-errors-the--operator">Chapter 9</a><!-- ignore -->. Rather than
+talked about in <a href="https://rust-book.cs.brown.edu/ch09-02-recoverable-errors-with-result.html#a-shortcut-for-propagating-errors-the--operator">Chapter 9</a><!-- ignore -->. Rather than
 <code>panic!</code> on an error, <code>?</code> will return the error value from the current function
 for the caller to handle.</p>
 <p>Third, the <code>run</code> function now returns an <code>Ok</code> value in the success case.
@@ -13788,7 +13788,7 @@ lines that match the query. We’ll add this functionality in a function called
 <p>Because we don’t need them anymore, let’s remove the <code>println!</code> statements from
 <em>src/lib.rs</em> and <em>src/main.rs</em> that we used to check the program’s behavior.
 Then, in <em>src/lib.rs</em>, we’ll add a <code>tests</code> module with a test function, as we
-did in <a href="ch11-01-writing-tests.html#the-anatomy-of-a-test-function">Chapter 11</a><!-- ignore -->. The test function specifies
+did in <a href="https://rust-book.cs.brown.edu/ch11-01-writing-tests.html#the-anatomy-of-a-test-function">Chapter 11</a><!-- ignore -->. The test function specifies
 the behavior we want the <code>search</code> function to have: it will take a query and
 the text to search, and it will return only the lines from the text that
 contain the query. Listing 12-15 shows this test, which won’t compile yet.</p>
@@ -13901,7 +13901,7 @@ because an empty vector doesn’t match a vector containing the line <code>"safe
 </figure>
 <p>Notice that we need to define an explicit lifetime <code>'a</code> in the signature of
 <code>search</code> and use that lifetime with the <code>contents</code> argument and the return
-value. Recall in <a href="ch10-03-lifetime-syntax.html">Chapter 10</a><!-- ignore --> that the lifetime
+value. Recall in <a href="https://rust-book.cs.brown.edu/ch10-03-lifetime-syntax.html">Chapter 10</a><!-- ignore --> that the lifetime
 parameters specify which argument lifetime is connected to the lifetime of the
 return value. In this case, we indicate that the returned vector should contain
 string slices that reference slices of the argument <code>contents</code> (rather than the
@@ -13938,7 +13938,7 @@ the argument that should be connected to the return value using the lifetime
 syntax.</p>
 <p>Other programming languages don’t require you to connect arguments to return
 values in the signature, but this practice will get easier over time. You might
-want to compare this example with the examples in the <a href="ch10-03-lifetime-syntax.html#validating-references-with-lifetimes">“Validating References
+want to compare this example with the examples in the <a href="https://rust-book.cs.brown.edu/ch10-03-lifetime-syntax.html#validating-references-with-lifetimes">“Validating References
 with Lifetimes”</a><!-- ignore --> section
 in Chapter 10.</p>
 <p>Now let’s run the test:</p>
@@ -14036,8 +14036,8 @@ this won’t compile yet.</p>
 <figcaption>Listing 12-17: Iterating through each line in <code>contents</code></figcaption>
 </figure>
 <p>The <code>lines</code> method returns an iterator. We’ll talk about iterators in depth in
-<a href="ch13-02-iterators.html">Chapter 13</a><!-- ignore -->, but recall that you saw this way
-of using an iterator in <a href="ch03-05-control-flow.html#looping-through-a-collection-with-for">Listing 3-5</a><!-- ignore -->, where we used a
+<a href="https://rust-book.cs.brown.edu/ch13-02-iterators.html">Chapter 13</a><!-- ignore -->, but recall that you saw this way
+of using an iterator in <a href="https://rust-book.cs.brown.edu/ch03-05-control-flow.html#looping-through-a-collection-with-for">Listing 3-5</a><!-- ignore -->, where we used a
 <code>for</code> loop with an iterator to run some code on each item in a collection.</p>
 <h4 id="searching-each-line-for-the-query"><a class="header" href="#searching-each-line-for-the-query">Searching Each Line for the Query</a></h4>
 <p>Next, we’ll check whether the current line contains our query string.
@@ -14194,7 +14194,7 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 implementation of the search function while keeping the tests passing to
 maintain the same functionality. The code in the search function isn’t too bad,
 but it doesn’t take advantage of some useful features of iterators. We’ll
-return to this example in <a href="ch13-02-iterators.html">Chapter 13</a><!-- ignore -->, where
+return to this example in <a href="https://rust-book.cs.brown.edu/ch13-02-iterators.html">Chapter 13</a><!-- ignore -->, where
 we’ll explore iterators in detail, and look at how to improve it.</p>
 <h4 id="using-the-search-function-in-the-run-function"><a class="header" href="#using-the-search-function-in-the-run-function">Using the <code>search</code> Function in the <code>run</code> Function</a></h4>
 <p>Now that the <code>search</code> function is working and tested, we need to call <code>search</code>
@@ -16196,7 +16196,7 @@ the <code>Iterator</code> trait and returns <code>String</code> values.</p>
 <p>We’ve updated the signature of the <code>Config::build</code> function so the parameter
 <code>args</code> has a generic type with the trait bounds <code>impl Iterator&lt;Item = String&gt;</code>
 instead of <code>&amp;[String]</code>. This usage of the <code>impl Trait</code> syntax we discussed in
-the <a href="ch10-02-traits.html#traits-as-parameters">“Traits as Parameters”</a><!-- ignore --> section of Chapter 10
+the <a href="https://rust-book.cs.brown.edu/ch10-02-traits.html#traits-as-parameters">“Traits as Parameters”</a><!-- ignore --> section of Chapter 10
 means that <code>args</code> can be any type that implements the <code>Iterator</code> trait and
 returns <code>String</code> items.</p>
 <p>Because we’re taking ownership of <code>args</code> and we’ll be mutating <code>args</code> by
@@ -17567,14 +17567,14 @@ ensure the data won’t be copied when you do so</li>
 <li>When you want to own a value and you care only that it’s a type that
 implements a particular trait rather than being of a specific type</li>
 </ul>
-<p>We’ll demonstrate the first situation in the <a href="ch15-01-box.html#enabling-recursive-types-with-boxes">“Enabling Recursive Types with
+<p>We’ll demonstrate the first situation in the <a href="https://rust-book.cs.brown.edu/ch15-01-box.html#enabling-recursive-types-with-boxes">“Enabling Recursive Types with
 Boxes”</a><!-- ignore --> section. In the
 second case, transferring ownership of a large amount of data can take a long
 time because the data is copied around on the stack. To improve performance in
 this situation, we can store the large amount of data on the heap in a box.
 Then, only the small amount of pointer data is copied around on the stack,
 while the data it references stays in one place on the heap. The third case is
-known as a <em>trait object</em>, and Chapter 18 devotes an entire section, <a href="ch18-02-trait-objects.html#using-trait-objects-that-allow-for-values-of-different-types">“Using
+known as a <em>trait object</em>, and Chapter 18 devotes an entire section, <a href="https://rust-book.cs.brown.edu/ch18-02-trait-objects.html#using-trait-objects-that-allow-for-values-of-different-types">“Using
 Trait Objects That Allow for Values of Different Types,”</a><!--
 ignore --> just to that topic. So what you learn here you’ll apply again in
 Chapter 18!</p>
@@ -17958,7 +17958,7 @@ error: could not compile `deref-example` (bin "deref-example") due to 1 previous
 ability on our type. To enable dereferencing with the <code>*</code> operator, we
 implement the <code>Deref</code> trait.</p>
 <h3 id="treating-a-type-like-a-reference-by-implementing-the-deref-trait"><a class="header" href="#treating-a-type-like-a-reference-by-implementing-the-deref-trait">Treating a Type Like a Reference by Implementing the <code>Deref</code> Trait</a></h3>
-<p>As discussed in the <a href="ch10-02-traits.html#implementing-a-trait-on-a-type">“Implementing a Trait on a Type”</a><!-- ignore
+<p>As discussed in the <a href="https://rust-book.cs.brown.edu/ch10-02-traits.html#implementing-a-trait-on-a-type">“Implementing a Trait on a Type”</a><!-- ignore
 --> section of Chapter 10, to implement a trait, we need to provide
 implementations for the trait’s required methods. The <code>Deref</code> trait, provided
 by the standard library, requires us to implement one method named <code>deref</code> that
@@ -17999,7 +17999,7 @@ generic parameter, but you don’t need to worry about them for now; we’ll cov
 them in more detail in Chapter 20.</p>
 <p>We fill in the body of the <code>deref</code> method with <code>&amp;self.0</code> so <code>deref</code> returns a
 reference to the value we want to access with the <code>*</code> operator; recall from the
-<a href="ch05-01-defining-structs.html#using-tuple-structs-without-named-fields-to-create-different-types">“Using Tuple Structs without Named Fields to Create Different
+<a href="https://rust-book.cs.brown.edu/ch05-01-defining-structs.html#using-tuple-structs-without-named-fields-to-create-different-types">“Using Tuple Structs without Named Fields to Create Different
 Types”</a><!-- ignore --> section of Chapter 5 that <code>.0</code> accesses
 the first value in a tuple struct. The <code>main</code> function in Listing 15-9 that
 calls <code>*</code> on the <code>MyBox&lt;T&gt;</code> value now compiles, and the assertions pass!</p>
@@ -18500,7 +18500,7 @@ then we can see how the reference count changes when <code>c</code> goes out of 
 reference count, which we get by calling the <code>Rc::strong_count</code> function. This
 function is named <code>strong_count</code> rather than <code>count</code> because the <code>Rc&lt;T&gt;</code> type
 also has a <code>weak_count</code>; we’ll see what <code>weak_count</code> is used for in the
-<a href="ch15-06-reference-cycles.html#preventing-reference-cycles-turning-an-rct-into-a-weakt">“Preventing Reference Cycles: Turning an <code>Rc&lt;T&gt;</code> into a
+<a href="https://rust-book.cs.brown.edu/ch15-06-reference-cycles.html#preventing-reference-cycles-turning-an-rct-into-a-weakt">“Preventing Reference Cycles: Turning an <code>Rc&lt;T&gt;</code> into a
 <code>Weak&lt;T&gt;</code>”</a><!-- ignore --> section.</p>
 <p>This code prints the following:</p>
 <pre><code class="language-console">$ cargo run
@@ -19112,7 +19112,7 @@ can both refer to <code>a</code>, which is what we did in Listing 15-18.</p>
 <p>After we’ve created the lists in <code>a</code>, <code>b</code>, and <code>c</code>, we want to add 10 to the
 value in <code>value</code>. We do this by calling <code>borrow_mut</code> on <code>value</code>, which uses the
 automatic dereferencing feature we discussed in Chapter 5 (see the section
-<a href="ch05-03-method-syntax.html#wheres-the---operator">“Where’s the <code>-&gt;</code> Operator?”</a><!-- ignore -->) to
+<a href="https://rust-book.cs.brown.edu/ch05-03-method-syntax.html#wheres-the---operator">“Where’s the <code>-&gt;</code> Operator?”</a><!-- ignore -->) to
 dereference the <code>Rc&lt;T&gt;</code> to the inner <code>RefCell&lt;T&gt;</code> value. The <code>borrow_mut</code>
 method returns a <code>RefMut&lt;T&gt;</code> smart pointer, and we use the dereference operator
 on it and change the inner value.</p>
@@ -19822,7 +19822,7 @@ threads run at the same time.</p>
 <p>We’ll often use the <code>move</code> keyword with closures passed to <code>thread::spawn</code>
 because the closure will then take ownership of the values it uses from the
 environment, thus transferring ownership of those values from one thread to
-another. In the <a href="ch13-01-closures.html#capturing-references-or-moving-ownership">“Capturing References or Moving Ownership”</a><!-- ignore
+another. In the <a href="https://rust-book.cs.brown.edu/ch13-01-closures.html#capturing-references-or-moving-ownership">“Capturing References or Moving Ownership”</a><!-- ignore
 --> section of Chapter 13, we discussed <code>move</code> in the context of closures. Now,
 we’ll concentrate more on the interaction between <code>move</code> and <code>thread::spawn</code>.</p>
 <p>Notice in Listing 16-1 that the closure we pass to <code>thread::spawn</code> takes no
@@ -20637,7 +20637,7 @@ can be sent safely to another thread. Similar to <code>Send</code>, primitive ty
 family of related <code>Cell&lt;T&gt;</code> types are not <code>Sync</code>. The implementation of borrow
 checking that <code>RefCell&lt;T&gt;</code> does at runtime is not thread-safe. The smart
 pointer <code>Mutex&lt;T&gt;</code> is <code>Sync</code> and can be used to share access with multiple
-threads as you saw in the <a href="ch16-03-shared-state.html#sharing-a-mutext-between-multiple-threads">“Sharing a <code>Mutex&lt;T&gt;</code> Between Multiple
+threads as you saw in the <a href="https://rust-book.cs.brown.edu/ch16-03-shared-state.html#sharing-a-mutext-between-multiple-threads">“Sharing a <code>Mutex&lt;T&gt;</code> Between Multiple
 Threads”</a><!-- ignore --> section.</p>
 <h3 id="implementing-send-and-sync-manually-is-unsafe"><a class="header" href="#implementing-send-and-sync-manually-is-unsafe">Implementing <code>Send</code> and <code>Sync</code> Manually Is Unsafe</a></h3>
 <p>Because types that are made up of <code>Send</code> and <code>Sync</code> traits are automatically
@@ -20893,7 +20893,7 @@ also async.</p>
 <p>We have to explicitly await both of these futures, because futures in Rust are
 <em>lazy</em>: they don’t do anything until you ask them to with <code>await</code>. (In fact,
 Rust will show a compiler warning if you don’t use a future.) This should
-remind you of our discussion of iterators <a href="ch13-02-iterators.html">back in Chapter 13</a>.
+remind you of our discussion of iterators <a href="https://rust-book.cs.brown.edu/ch13-02-iterators.html">back in Chapter 13</a>.
 Iterators do nothing unless you call their <code>next</code> method—whether directly, or
 using <code>for</code> loops or methods such as <code>map</code> which use <code>next</code> under the hood. With
 futures, the same basic idea applies: they do nothing unless you explicitly ask
@@ -20970,7 +20970,7 @@ fn page_title(url: &amp;str) -&gt; impl Future&lt;Output = Option&lt;String&gt;&
 <span class="boring">}</span></code></pre></pre>
 <p>Let’s walk through each part of the transformed version:</p>
 <ul>
-<li>It uses the <code>impl Trait</code> syntax we discussed back in the <a href="ch10-02-traits.html#traits-as-parameters">“Traits as
+<li>It uses the <code>impl Trait</code> syntax we discussed back in the <a href="https://rust-book.cs.brown.edu/ch10-02-traits.html#traits-as-parameters">“Traits as
 Parameters”</a> section in Chapter 10.</li>
 <li>The returned trait is a <code>Future</code>, with an associated type of <code>Output</code>. Notice
 that the <code>Output</code> type is <code>Option&lt;String&gt;</code>, which is the same as the the
@@ -21880,7 +21880,7 @@ concrete type. The concrete types are the individual data structures generated
 by the compiler for async blocks. You can’t put two different hand-written
 structs in a <code>Vec</code>, and the same thing applies to the different structs
 generated by the compiler.</p>
-<p>To make this work, we need to use <em>trait objects</em>, just as we did in <a href="ch12-03-improving-error-handling-and-modularity.html">“Returning
+<p>To make this work, we need to use <em>trait objects</em>, just as we did in <a href="https://rust-book.cs.brown.edu/ch12-03-improving-error-handling-and-modularity.html">“Returning
 Errors from the run function”</a> in Chapter 12. (We’ll cover trait objects
 in detail in Chapter 18.) Using trait objects lets us treat each of the
 anonymous futures produced by these types as the same type, because all of them
@@ -22319,7 +22319,7 @@ racing one future against another.</p>
 pauses for some amount of time by calling and awaiting <code>sleep</code>, and then prints
 another message when it finishes. Then we pass both to <code>trpl::race</code> and wait for
 one of them to finish. (The outcome here won’t be too surprising: <code>fast</code> wins!)
-Unlike when we used <code>race</code> back in <a href="ch17-01-futures-and-syntax.html#our-first-async-program">Our First Async Program</a>, we
+Unlike when we used <code>race</code> back in <a href="https://rust-book.cs.brown.edu/ch17-01-futures-and-syntax.html#our-first-async-program">Our First Async Program</a>, we
 just ignore the <code>Either</code> instance it returns here, because all of the
 interesting behavior happens in the body of the async blocks.</p>
 <figure class="listing">
@@ -22355,7 +22355,7 @@ passed. Other implementations <em>are</em> fair, and will randomly choose which 
 to poll first. Regardless of whether the implementation of race we’re using is
 fair, though, <em>one</em> of the futures will run up to the first <code>await</code> in its body
 before another task can start.</p>
-<p>Recall from <a href="ch17-01-futures-and-syntax.html#our-first-async-program">Our First Async Program</a> that at each await point,
+<p>Recall from <a href="https://rust-book.cs.brown.edu/ch17-01-futures-and-syntax.html#our-first-async-program">Our First Async Program</a> that at each await point,
 Rust gives a runtime a chance to pause the task and switch to another one if the
 future being awaited isn’t ready. The inverse is also true: Rust <em>only</em> pauses
 async blocks and hands control back to a runtime at an await point. Everything
@@ -22800,7 +22800,7 @@ with any collection of futures.)</p>
 <h2 id="streams"><a class="header" href="#streams">Streams</a></h2>
 <p>So far in this chapter, we have mostly stuck to individual futures. The one big
 exception was the async channel we used. Recall how we used the receiver for our
-async channel in the <a href="ch17-02-concurrency-with-async.html#message-passing">“Message Passing”</a> earlier in the chapter.
+async channel in the <a href="https://rust-book.cs.brown.edu/ch17-02-concurrency-with-async.html#message-passing">“Message Passing”</a> earlier in the chapter.
 The async <code>recv</code> method produces a sequence of items over time. This is an
 instance of a much more general pattern, often called a <em>stream</em>.</p>
 <p>A sequence of items is something we’ve seen before, when we looked at the
@@ -23557,7 +23557,7 @@ situations where understanding a few more of these details matters. In this
 section, we’ll dig down <em>enough</em> further to help with those situations—while
 still leaving the <em>really</em> deep dive for other documentation!</p>
 <h3 id="future"><a class="header" href="#future">Future</a></h3>
-<p>Back in <a href="ch17-01-futures-and-syntax.html">Futures and the Async Syntax</a>, we noted that <code>Future</code>
+<p>Back in <a href="https://rust-book.cs.brown.edu/ch17-01-futures-and-syntax.html">Futures and the Async Syntax</a>, we noted that <code>Future</code>
 is a trait. Let’s start by taking a closer look at how it works. Here is how
 Rust defines a <code>Future</code>:</p>
 <pre><code class="language-rust edition2021"><span class="boring">#![allow(unused)]
@@ -23633,7 +23633,7 @@ makes sure that the loop can hand off control to something which can pause work
 on this future and work on other futures and check this one again later. That
 “something” is an async runtime, and this scheduling and coordination work is
 one of the main jobs for a runtime.</p>
-<p>Recall our description (in the <a href="ch17-02-concurrency-with-async.html">Counting</a> section) of waiting on
+<p>Recall our description (in the <a href="https://rust-book.cs.brown.edu/ch17-02-concurrency-with-async.html">Counting</a> section) of waiting on
 <code>rx.recv</code>. The <code>recv</code> call returns a <code>Future</code>, and awaiting it polls it. In our
 initial discussion, we noted that a runtime will pause the future until it’s
 ready with either <code>Some(message)</code> or <code>None</code> when the channel closes. With our
@@ -23729,7 +23729,7 @@ relevant guarantees, by wrapping pointers in the type.</p>
 to explain the error message we saw above—but that was in terms of <code>Unpin</code>, not
 <code>Pin</code>. So what exactly are <code>Pin</code> and <code>Unpin</code>, how do they relate, and why does
 <code>Future</code> need <code>self</code> to be in a <code>Pin</code> type to call <code>poll</code>?</p>
-<p>In <a href="ch17-01-futures-and-syntax.html#our-first-async-program">Our First Async Program</a>, we described how a series of await
+<p>In <a href="https://rust-book.cs.brown.edu/ch17-01-futures-and-syntax.html#our-first-async-program">Our First Async Program</a>, we described how a series of await
 points in a future get compiled into a state machine—and noted how the compiler
 helps make sure that state machine follows all of Rust’s normal rules around
 safety, including borrowing and ownership. To make that work, Rust looks at what
@@ -23741,7 +23741,7 @@ getting a mutable or immutable reference to it.</p>
 <p>So far so good: if we get anything wrong about the ownership or references in a
 given async block, the borrow checker will tell us. When we want to move around
 the future that corresponds to that block—like moving it into a <code>Vec</code> to pass
-to <code>join_all</code>, the way we did back in the <a href="ch17-03-more-futures.html#working-with-any-number-of-futures">“Working With Any Number of
+to <code>join_all</code>, the way we did back in the <a href="https://rust-book.cs.brown.edu/ch17-03-more-futures.html#working-with-any-number-of-futures">“Working With Any Number of
 Futures”</a><!-- ignore --> section—things get trickier.</p>
 <p>When we move a future—whether by pushing into a data structure to use as an
 iterator with <code>join_all</code>, or returning them from a function—that actually means
@@ -24085,8 +24085,8 @@ subject we haven’t covered in depth in this chapter, but which is implicit in
 the fact that whenever we ended a future, its state got cleaned up correctly.</p>
 <p>These limitations also make threads harder to compose than futures. It’s much
 more difficult, for example, to use threads to build helpers such as the
-<code>timeout</code> we built in <a href="ch17-03-more-futures.html#building-our-own-async-abstractions">“Building Our Own Async Abstractions”</a>
-or the <code>throttle</code> method we used with streams in <a href="ch17-04-streams.html#composing-streams">“Composing Streams”</a>.
+<code>timeout</code> we built in <a href="https://rust-book.cs.brown.edu/ch17-03-more-futures.html#building-our-own-async-abstractions">“Building Our Own Async Abstractions”</a>
+or the <code>throttle</code> method we used with streams in <a href="https://rust-book.cs.brown.edu/ch17-04-streams.html#composing-streams">“Composing Streams”</a>.
 The fact that futures are richer data structures means they can be composed
 together more naturally, as we have seen.</p>
 <p>Tasks then give <em>additional</em> control over futures, allowing you to choose where
@@ -24365,7 +24365,7 @@ implementing our specified trait and a table used to look up trait methods on
 that type at runtime. We create a trait object by specifying some sort of
 pointer, such as a <code>&amp;</code> reference or a <code>Box&lt;T&gt;</code> smart pointer, then the <code>dyn</code>
 keyword, and then specifying the relevant trait. (We’ll talk about the reason
-trait objects must use a pointer in Chapter 20 in the section <a href="ch20-04-advanced-types.html#dynamically-sized-types-and-the-sized-trait">“Dynamically
+trait objects must use a pointer in Chapter 20 in the section <a href="https://rust-book.cs.brown.edu/ch20-04-advanced-types.html#dynamically-sized-types-and-the-sized-trait">“Dynamically
 Sized Types and the <code>Sized</code> Trait.”</a><!-- ignore -->) We can
 use trait objects in place of a generic or concrete type. Wherever we use a
 trait object, Rust’s type system will ensure at compile time that any value
@@ -24631,7 +24631,7 @@ error: could not compile `gui` (bin "gui") due to 1 previous error
 didn’t mean to pass and so should pass a different type or we should implement
 <code>Draw</code> on <code>String</code> so that <code>Screen</code> is able to call <code>draw</code> on it.</p>
 <h3 id="trait-objects-perform-dynamic-dispatch"><a class="header" href="#trait-objects-perform-dynamic-dispatch">Trait Objects Perform Dynamic Dispatch</a></h3>
-<p>Recall in the <a href="ch10-01-syntax.html#performance-of-code-using-generics">“Performance of Code Using
+<p>Recall in the <a href="https://rust-book.cs.brown.edu/ch10-01-syntax.html#performance-of-code-using-generics">“Performance of Code Using
 Generics”</a><!-- ignore --> section in
 Chapter 10 our discussion on the monomorphization process performed by the
 compiler when we use trait bounds on generics: the compiler generates
@@ -25133,7 +25133,7 @@ we can’t move <code>state</code> out of the borrowed <code>&amp;self</code> of
 <p>We then call the <code>unwrap</code> method, which we know will never panic, because we
 know the methods on <code>Post</code> ensure that <code>state</code> will always contain a <code>Some</code>
 value when those methods are done. This is one of the cases we talked about in
-the <a href="ch09-03-to-panic-or-not-to-panic.html#cases-in-which-you-have-more-information-than-the-compiler">“Cases In Which You Have More Information Than the
+the <a href="https://rust-book.cs.brown.edu/ch09-03-to-panic-or-not-to-panic.html#cases-in-which-you-have-more-information-than-the-compiler">“Cases In Which You Have More Information Than the
 Compiler”</a><!-- ignore --> section of Chapter 9 when we
 know that a <code>None</code> value is never possible, even though the compiler isn’t able
 to understand that.</p>
@@ -25299,7 +25299,7 @@ and <code>approve</code> methods on <code>Post</code>. Both methods delegate to 
 the same method on the value in the <code>state</code> field of <code>Option</code> and set the new
 value of the <code>state</code> field to the result. If we had a lot of methods on <code>Post</code>
 that followed this pattern, we might consider defining a macro to eliminate the
-repetition (see the <a href="ch20-06-macros.html#macros">“Macros”</a><!-- ignore --> section in Chapter 20).</p>
+repetition (see the <a href="https://rust-book.cs.brown.edu/ch20-06-macros.html#macros">“Macros”</a><!-- ignore --> section in Chapter 20).</p>
 <p>By implementing the state pattern exactly as it’s defined for object-oriented
 languages, we’re not taking as full advantage of Rust’s strengths as we could.
 Let’s look at some changes we can make to the <code>blog</code> crate that can make
@@ -25560,7 +25560,7 @@ value can never fail and thus covers every remaining case.</p>
 <p>The particular pattern <code>_</code> will match anything, but it never binds to a
 variable, so it’s often used in the last match arm. The <code>_</code> pattern can be
 useful when you want to ignore any value not specified, for example. We’ll
-cover the <code>_</code> pattern in more detail in the <a href="ch19-03-pattern-syntax.html#ignoring-values-in-a-pattern">“Ignoring Values in a
+cover the <code>_</code> pattern in more detail in the <a href="https://rust-book.cs.brown.edu/ch19-03-pattern-syntax.html#ignoring-values-in-a-pattern">“Ignoring Values in a
 Pattern”</a><!-- ignore --> section later in this
 chapter.</p>
 <h3 id="conditional-if-let-expressions"><a class="header" href="#conditional-if-let-expressions">Conditional <code>if let</code> Expressions</a></h3>
@@ -25733,7 +25733,7 @@ For more information about this error, try `rustc --explain E0308`.
 error: could not compile `patterns` (bin "patterns") due to 1 previous error
 </code></pre>
 <p>To fix the error, we could ignore one or more of the values in the tuple using
-<code>_</code> or <code>..</code>, as you’ll see in the <a href="ch19-03-pattern-syntax.html#ignoring-values-in-a-pattern">“Ignoring Values in a
+<code>_</code> or <code>..</code>, as you’ll see in the <a href="https://rust-book.cs.brown.edu/ch19-03-pattern-syntax.html#ignoring-values-in-a-pattern">“Ignoring Values in a
 Pattern”</a><!-- ignore --> section. If the problem
 is that we have too many variables in the pattern, the solution is to make the
 types match by removing variables so the number of variables equals the number
@@ -25948,7 +25948,7 @@ been shadowed. In this hypothetical case, the <code>match</code> would print <co
 the inner <code>y</code>. The last <code>println!</code> produces <code>at the end: x = Some(5), y = 10</code>.</p>
 <p>To create a <code>match</code> expression that compares the values of the outer <code>x</code> and
 <code>y</code>, rather than introducing a shadowed variable, we would need to use a match
-guard conditional instead. We’ll talk about match guards later in the <a href="ch19-03-pattern-syntax.html#extra-conditionals-with-match-guards">“Extra
+guard conditional instead. We’ll talk about match guards later in the <a href="https://rust-book.cs.brown.edu/ch19-03-pattern-syntax.html#extra-conditionals-with-match-guards">“Extra
 Conditionals with Match Guards”</a><!--
 ignore --> section.</p>
 <h3 id="multiple-patterns"><a class="header" href="#multiple-patterns">Multiple Patterns</a></h3>
@@ -26637,7 +26637,7 @@ abstraction is safe.</p>
 <p>Let’s look at each of the five unsafe superpowers in turn. We’ll also look at
 some abstractions that provide a safe interface to unsafe code.</p>
 <h3 id="dereferencing-a-raw-pointer"><a class="header" href="#dereferencing-a-raw-pointer">Dereferencing a Raw Pointer</a></h3>
-<p>In Chapter 4, in the <a href="ch04-02-references-and-borrowing.html#dangling-references">“Dangling References”</a><!-- ignore
+<p>In Chapter 4, in the <a href="https://rust-book.cs.brown.edu/ch04-02-references-and-borrowing.html#dangling-references">“Dangling References”</a><!-- ignore
 --> section, we mentioned that the compiler ensures references are always
 valid. Unsafe Rust has two new types called <em>raw pointers</em> that are similar to
 references. As with references, raw pointers can be immutable or mutable and
@@ -26717,7 +26717,7 @@ same location and change data through the mutable pointer, potentially creating
 a data race. Be careful!</p>
 <p>With all of these dangers, why would you ever use raw pointers? One major use
 case is when interfacing with C code, as you’ll see in the next section,
-<a href="ch20-01-unsafe-rust.html#calling-an-unsafe-function-or-method">“Calling an Unsafe Function or
+<a href="https://rust-book.cs.brown.edu/ch20-01-unsafe-rust.html#calling-an-unsafe-function-or-method">“Calling an Unsafe Function or
 Method.”</a><!-- ignore --> Another case is
 when building up safe abstractions that the borrow checker doesn’t understand.
 We’ll introduce unsafe functions and then look at an example of a safe
@@ -26860,7 +26860,7 @@ fn split_at_mut(values: &amp;mut [i32], mid: usize) -&gt; (&amp;mut [i32], &amp;
 </span><span class="boring">}</span></code></pre></pre>
 <figcaption>Listing 20-6: Using unsafe code in the implementation of the <code>split_at_mut</code> function</figcaption>
 </figure>
-<p>Recall from <a href="ch04-03-slices.html#the-slice-type">“The Slice Type”</a><!-- ignore --> section in
+<p>Recall from <a href="https://rust-book.cs.brown.edu/ch04-03-slices.html#the-slice-type">“The Slice Type”</a><!-- ignore --> section in
 Chapter 4 that slices are a pointer to some data and the length of the slice.
 We use the <code>len</code> method to get the length of a slice and the <code>as_mut_ptr</code>
 method to access the raw pointer of a slice. In this case, because we have a
@@ -26973,7 +26973,7 @@ fn main() {
 <figcaption>Listing 20-9: Defining and using an immutable static variable</figcaption>
 </figure>
 <p>Static variables are similar to constants, which we discussed in the
-<a href="ch03-01-variables-and-mutability.html#constants">“Differences Between Variables and
+<a href="https://rust-book.cs.brown.edu/ch03-01-variables-and-mutability.html#constants">“Differences Between Variables and
 Constants”</a><!-- ignore --> section
 in Chapter 3. The names of static variables are in <code>SCREAMING_SNAKE_CASE</code> by
 convention. Static variables can only store references with the <code>'static</code>
@@ -27045,7 +27045,7 @@ fn main() {}</code></pre></pre>
 <p>By using <code>unsafe impl</code>, we’re promising that we’ll uphold the invariants that
 the compiler can’t verify.</p>
 <p>As an example, recall the <code>Sync</code> and <code>Send</code> marker traits we discussed in the
-<a href="ch16-04-extensible-concurrency-sync-and-send.html#extensible-concurrency-with-the-sync-and-send-traits">“Extensible Concurrency with the <code>Sync</code> and <code>Send</code>
+<a href="https://rust-book.cs.brown.edu/ch16-04-extensible-concurrency-sync-and-send.html#extensible-concurrency-with-the-sync-and-send-traits">“Extensible Concurrency with the <code>Sync</code> and <code>Send</code>
 Traits”</a><!-- ignore -->
 section in Chapter 16: the compiler implements these traits automatically if
 our types are composed entirely of <code>Send</code> and <code>Sync</code> types. If we implement a
@@ -27070,7 +27070,7 @@ the borrow checker is a <em>static</em> tool which works at compile time, Miri i
 program, or its test suite, and detecting when you violate the rules its
 understands about how Rust should work.</p>
 <p>Using Miri requires a nightly build of Rust (which we talk about more in
-<a href="appendix-07-nightly-rust.html">Appendix G: How Rust is Made and “Nightly Rust”</a>). You can install
+<a href="https://rust-book.cs.brown.edu/appendix-07-nightly-rust.html">Appendix G: How Rust is Made and “Nightly Rust”</a>). You can install
 both a nightly version of Rust and the Miri tool by typing <code>rustup +nightly component add miri</code>. This does not change what version of Rust your project
 uses; it only adds the tool to your system so you can use it when you want to.
 You can run Miri on a project by typing <code>cargo +nightly miri run</code> or <code>cargo +nightly miri test</code>.</p>
@@ -27115,7 +27115,7 @@ annotation makes it easier to track down the source of problems when they occur.
 Whenever you write unsafe code, you can use Miri to help you be more confident
 that the code you have written upholds Rust’s rules.</p>
 <h2 id="advanced-traits"><a class="header" href="#advanced-traits">Advanced Traits</a></h2>
-<p>We first covered traits in the <a href="ch10-02-traits.html#traits-defining-shared-behavior">“Traits: Defining Shared
+<p>We first covered traits in the <a href="https://rust-book.cs.brown.edu/ch10-02-traits.html#traits-defining-shared-behavior">“Traits: Defining Shared
 Behavior”</a><!-- ignore --> section of Chapter
 10, but we didn’t discuss the more advanced details. Now that you know more
 about Rust, we can get into the nitty-gritty.</p>
@@ -27274,7 +27274,7 @@ the <code>Add</code> trait where we want to customize the <code>Rhs</code> type 
 default.</p>
 <p>We have two structs, <code>Millimeters</code> and <code>Meters</code>, holding values in different
 units. This thin wrapping of an existing type in another struct is known as the
-<em>newtype pattern</em>, which we describe in more detail in the <a href="ch20-03-advanced-traits.html#using-the-newtype-pattern-to-implement-external-traits-on-external-types">“Using the Newtype
+<em>newtype pattern</em>, which we describe in more detail in the <a href="https://rust-book.cs.brown.edu/ch20-03-advanced-traits.html#using-the-newtype-pattern-to-implement-external-traits-on-external-types">“Using the Newtype
 Pattern to Implement External Traits on External Types”</a><!-- ignore
 --> section. We want to add values in millimeters to values in meters and have
 the implementation of <code>Add</code> do the conversion correctly. We can implement <code>Add</code>
@@ -27755,12 +27755,12 @@ impl fmt::Display for Point {
 successfully, and we can call <code>outline_print</code> on a <code>Point</code> instance to display
 it within an outline of asterisks.</p>
 <h3 id="using-the-newtype-pattern-to-implement-external-traits-on-external-types"><a class="header" href="#using-the-newtype-pattern-to-implement-external-traits-on-external-types">Using the Newtype Pattern to Implement External Traits on External Types</a></h3>
-<p>In Chapter 10 in the <a href="ch10-02-traits.html#implementing-a-trait-on-a-type">“Implementing a Trait on a
+<p>In Chapter 10 in the <a href="https://rust-book.cs.brown.edu/ch10-02-traits.html#implementing-a-trait-on-a-type">“Implementing a Trait on a
 Type”</a><!-- ignore --> section, we mentioned the
 orphan rule that states we’re only allowed to implement a trait on a type if
 either the trait or the type are local to our crate. It’s possible to get
 around this restriction using the <em>newtype pattern</em>, which involves creating a
-new type in a tuple struct. (We covered tuple structs in the <a href="ch05-01-defining-structs.html#using-tuple-structs-without-named-fields-to-create-different-types">“Using Tuple
+new type in a tuple struct. (We covered tuple structs in the <a href="https://rust-book.cs.brown.edu/ch05-01-defining-structs.html#using-tuple-structs-without-named-fields-to-create-different-types">“Using Tuple
 Structs without Named Fields to Create Different Types”</a><!--
 ignore --> section of Chapter 5.) The tuple struct will have one field and be a
 thin wrapper around the type we want to implement a trait for. Then the wrapper
@@ -27799,7 +27799,7 @@ doesn’t have the methods of the value it’s holding. We would have to impleme
 all the methods of <code>Vec&lt;T&gt;</code> directly on <code>Wrapper</code> such that the methods
 delegate to <code>self.0</code>, which would allow us to treat <code>Wrapper</code> exactly like a
 <code>Vec&lt;T&gt;</code>. If we wanted the new type to have every method the inner type has,
-implementing the <code>Deref</code> trait (discussed in Chapter 15 in the <a href="ch15-02-deref.html#treating-smart-pointers-like-regular-references-with-the-deref-trait">“Treating Smart
+implementing the <code>Deref</code> trait (discussed in Chapter 15 in the <a href="https://rust-book.cs.brown.edu/ch15-02-deref.html#treating-smart-pointers-like-regular-references-with-the-deref-trait">“Treating Smart
 Pointers Like Regular References with the <code>Deref</code>
 Trait”</a><!-- ignore --> section) on the <code>Wrapper</code> to return
 the inner type would be a solution. If we don’t want the <code>Wrapper</code> type to have
@@ -27815,7 +27815,7 @@ similar to newtypes but with slightly different semantics. We’ll also discuss
 the <code>!</code> type and dynamically sized types.</p>
 <h3 id="using-the-newtype-pattern-for-type-safety-and-abstraction"><a class="header" href="#using-the-newtype-pattern-for-type-safety-and-abstraction">Using the Newtype Pattern for Type Safety and Abstraction</a></h3>
 <section class="note" aria-role="note">
-<p>Note: This section assumes you’ve read the earlier section <a href="ch20-03-advanced-traits.html#using-the-newtype-pattern-to-implement-external-traits-on-external-types">“Using the
+<p>Note: This section assumes you’ve read the earlier section <a href="https://rust-book.cs.brown.edu/ch20-03-advanced-traits.html#using-the-newtype-pattern-to-implement-external-traits-on-external-types">“Using the
 Newtype Pattern to Implement External Traits on External
 Types.”</a><!-- ignore --></p>
 </section>
@@ -27836,7 +27836,7 @@ associated with their name. Code using <code>People</code> would only interact w
 public API we provide, such as a method to add a name string to the <code>People</code>
 collection; that code wouldn’t need to know that we assign an <code>i32</code> ID to names
 internally. The newtype pattern is a lightweight way to achieve encapsulation
-to hide implementation details, which we discussed in the <a href="ch18-01-what-is-oo.html#encapsulation-that-hides-implementation-details">“Encapsulation that
+to hide implementation details, which we discussed in the <a href="https://rust-book.cs.brown.edu/ch18-01-what-is-oo.html#encapsulation-that-hides-implementation-details">“Encapsulation that
 Hides Implementation
 Details”</a><!-- ignore -->
 section of Chapter 18.</p>
@@ -28023,7 +28023,7 @@ here in Listing 20-26.</p>
 </span><span class="boring">}</span></code></pre>
 <figcaption>Listing 20-26: A <code>match</code> with an arm that ends in <code>continue</code></figcaption>
 </figure>
-<p>At the time, we skipped over some details in this code. In Chapter 6 in <a href="ch06-02-match.html#the-match-control-flow-operator">“The
+<p>At the time, we skipped over some details in this code. In Chapter 6 in <a href="https://rust-book.cs.brown.edu/ch06-02-match.html#the-match-control-flow-operator">“The
 <code>match</code> Control Flow Operator”</a><!-- ignore -->
 section, we discussed that <code>match</code> arms must all return the same type. So, for
 example, the following code doesn’t work:</p>
@@ -28103,7 +28103,7 @@ same amount of space. But they have different lengths: <code>s1</code> needs 12 
 storage and <code>s2</code> needs 15. This is why it’s not possible to create a variable
 holding a dynamically sized type.</p>
 <p>So what do we do? In this case, you already know the answer: we make the types
-of <code>s1</code> and <code>s2</code> a <code>&amp;str</code> rather than a <code>str</code>. Recall from the <a href="ch04-03-slices.html#string-slices">“String
+of <code>s1</code> and <code>s2</code> a <code>&amp;str</code> rather than a <code>str</code>. Recall from the <a href="https://rust-book.cs.brown.edu/ch04-03-slices.html#string-slices">“String
 Slices”</a><!-- ignore --> section of Chapter 4 that the slice data
 structure just stores the starting position and the length of the slice. So
 although a <code>&amp;T</code> is a single value that stores the memory address of where the
@@ -28118,7 +28118,7 @@ types behind a pointer of some kind.</p>
 <p>We can combine <code>str</code> with all kinds of pointers: for example, <code>Box&lt;str&gt;</code> or
 <code>Rc&lt;str&gt;</code>. In fact, you’ve seen this before but with a different dynamically
 sized type: traits. Every trait is a dynamically sized type we can refer to by
-using the name of the trait. In Chapter 18 in the <a href="ch18-02-trait-objects.html#using-trait-objects-that-allow-for-values-of-different-types">“Using Trait Objects That
+using the name of the trait. In Chapter 18 in the <a href="https://rust-book.cs.brown.edu/ch18-02-trait-objects.html#using-trait-objects-that-allow-for-values-of-different-types">“Using Trait Objects That
 Allow for Values of Different
 Types”</a><!--
 ignore --> section, we mentioned that to use traits as trait objects, we must
@@ -28217,11 +28217,11 @@ like this:</p>
         list_of_numbers.iter().map(ToString::to_string).collect();
 <span class="boring">}</span></code></pre></pre>
 <p>Note that we must use the fully qualified syntax that we talked about earlier
-in the <a href="ch20-03-advanced-traits.html#advanced-traits">“Advanced Traits”</a><!-- ignore --> section because
+in the <a href="https://rust-book.cs.brown.edu/ch20-03-advanced-traits.html#advanced-traits">“Advanced Traits”</a><!-- ignore --> section because
 there are multiple functions available named <code>to_string</code>. Here, we’re using the
 <code>to_string</code> function defined in the <code>ToString</code> trait, which the standard
 library has implemented for any type that implements <code>Display</code>.</p>
-<p>Recall from the <a href="ch06-01-defining-an-enum.html#enum-values">“Enum values”</a><!-- ignore --> section of Chapter
+<p>Recall from the <a href="https://rust-book.cs.brown.edu/ch06-01-defining-an-enum.html#enum-values">“Enum values”</a><!-- ignore --> section of Chapter
 6 that the name of each enum variant that we define also becomes an initializer
 function. We can use these initializer functions as function pointers that
 implement the closure traits, which means we can specify the initializer
@@ -28278,7 +28278,7 @@ We can use a trait object:</p>
     Box::new(|x| x + 1)
 }</code></pre>
 <p>This code will compile just fine. For more about trait objects, refer to the
-section <a href="ch18-02-trait-objects.html#using-trait-objects-that-allow-for-values-of-different-types">“Using Trait Objects That Allow for Values of Different
+section <a href="https://rust-book.cs.brown.edu/ch18-02-trait-objects.html#using-trait-objects-that-allow-for-values-of-different-types">“Using Trait Objects That Allow for Values of Different
 Types”</a><!--
 ignore --> in Chapter 19.</p>
 <p>Next, let’s look at macros!</p>
@@ -28720,7 +28720,7 @@ function that generates the code you want!</p>
 <code>macro_rules!</code> macros, they’re more flexible than functions; for example, they
 can take an unknown number of arguments. However, <code>macro_rules!</code> macros can be
 defined only using the match-like syntax we discussed in the section
-<a href="ch20-06-macros.html#declarative-macros-with-macro_rules-for-general-metaprogramming">“Declarative Macros with <code>macro_rules!</code> for General
+<a href="https://rust-book.cs.brown.edu/ch20-06-macros.html#declarative-macros-with-macro_rules-for-general-metaprogramming">“Declarative Macros with <code>macro_rules!</code> for General
 Metaprogramming”</a><!-- ignore --> earlier. Function-like macros take a
 <code>TokenStream</code> parameter and their definition manipulates that <code>TokenStream</code>
 using Rust code as the other two types of procedural macros do. An example of a
@@ -29702,7 +29702,7 @@ impl ThreadPool {
 <p>We chose <code>usize</code> as the type of the <code>size</code> parameter, because we know that a
 negative number of threads doesn’t make any sense. We also know we’ll use this
 4 as the number of elements in a collection of threads, which is what the
-<code>usize</code> type is for, as discussed in the <a href="ch03-02-data-types.html#integer-types">“Integer Types”</a><!--
+<code>usize</code> type is for, as discussed in the <a href="https://rust-book.cs.brown.edu/ch03-02-data-types.html#integer-types">“Integer Types”</a><!--
 ignore --> section of Chapter 3.</p>
 <p>Let’s check the code again:</p>
 <pre><code class="language-console">$ cargo check
@@ -29717,13 +29717,13 @@ For more information about this error, try `rustc --explain E0599`.
 error: could not compile `hello` (bin "hello") due to 1 previous error
 </code></pre>
 <p>Now the error occurs because we don’t have an <code>execute</code> method on <code>ThreadPool</code>.
-Recall from the <a href="ch21-02-multithreaded.html#creating-a-finite-number-of-threads">“Creating a Finite Number of
+Recall from the <a href="https://rust-book.cs.brown.edu/ch21-02-multithreaded.html#creating-a-finite-number-of-threads">“Creating a Finite Number of
 Threads”</a><!-- ignore --> section that we
 decided our thread pool should have an interface similar to <code>thread::spawn</code>. In
 addition, we’ll implement the <code>execute</code> function so it takes the closure it’s
 given and gives it to an idle thread in the pool to run.</p>
 <p>We’ll define the <code>execute</code> method on <code>ThreadPool</code> to take a closure as a
-parameter. Recall from the <a href="ch13-01-closures.html#moving-captured-values-out-of-the-closure-and-the-fn-traits">“Moving Captured Values Out of the Closure and the
+parameter. Recall from the <a href="https://rust-book.cs.brown.edu/ch13-01-closures.html#moving-captured-values-out-of-the-closure-and-the-fn-traits">“Moving Captured Values Out of the Closure and the
 <code>Fn</code> Traits”</a><!-- ignore --> section in Chapter 13 that we can take
 closures as parameters with three different traits: <code>Fn</code>, <code>FnMut</code>, and
 <code>FnOnce</code>. We need to decide which kind of closure to use here. We know we’ll
@@ -30280,7 +30280,7 @@ share ownership of the receiver.</p>
 <h4 id="implementing-the-execute-method"><a class="header" href="#implementing-the-execute-method">Implementing the <code>execute</code> Method</a></h4>
 <p>Let’s finally implement the <code>execute</code> method on <code>ThreadPool</code>. We’ll also change
 <code>Job</code> from a struct to a type alias for a trait object that holds the type of
-closure that <code>execute</code> receives. As discussed in the <a href="ch20-04-advanced-types.html#creating-type-synonyms-with-type-aliases">“Creating Type Synonyms
+closure that <code>execute</code> receives. As discussed in the <a href="https://rust-book.cs.brown.edu/ch20-04-advanced-types.html#creating-type-synonyms-with-type-aliases">“Creating Type Synonyms
 with Type Aliases”</a><!-- ignore -->
 section of Chapter 20, type aliases allow us to make long types shorter for
 ease of use. Look at Listing 21-19.</p>
@@ -31497,7 +31497,7 @@ Rust journey.</p>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="appendix-a-keywords"><a class="header" href="#appendix-a-keywords">Appendix A: Keywords</a></h2>
 <p>The following list contains keywords that are reserved for current or future
 use by the Rust language. As such, they cannot be used as identifiers (except
-as raw identifiers as we’ll discuss in the “<a href="appendix-01-keywords.html#raw-identifiers">Raw
+as raw identifiers as we’ll discuss in the “<a href="https://rust-book.cs.brown.edu/appendix-01-keywords.html#raw-identifiers">Raw
 Identifiers</a><!-- ignore -->” section). Identifiers are names
 of functions, variables, parameters, struct fields, modules, crates, constants,
 macros, static values, attributes, types, traits, or lifetimes.</p>
@@ -31603,7 +31603,7 @@ allow you to use libraries written in a different Rust edition than your crate
 uses. For example, <code>try</code> isn’t a keyword in the 2015 edition but is in the 2018
 edition. If you depend on a library that’s written using the 2015 edition and
 has a <code>try</code> function, you’ll need to use the raw identifier syntax, <code>r#try</code> in
-this case, to call that function from your 2018 edition code. See <a href="appendix-05-editions.html">Appendix
+this case, to call that function from your 2018 edition code. See <a href="https://rust-book.cs.brown.edu/appendix-05-editions.html">Appendix
 E</a><!-- ignore --> for more information on editions.</p>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="appendix-b-operators-and-symbols"><a class="header" href="#appendix-b-operators-and-symbols">Appendix B: Operators and Symbols</a></h2>
 <p>This appendix contains a glossary of Rust’s syntax, including operators and
@@ -31816,7 +31816,7 @@ it can’t provide appropriate default behavior for you.</p>
 libraries can implement <code>derive</code> for their own traits, making the list of
 traits you can use <code>derive</code> with truly open-ended. Implementing <code>derive</code>
 involves using a procedural macro, which is covered in the
-<a href="ch20-06-macros.html#macros">“Macros”</a><!-- ignore --> section of Chapter 20.</p>
+<a href="https://rust-book.cs.brown.edu/ch20-06-macros.html#macros">“Macros”</a><!-- ignore --> section of Chapter 20.</p>
 <h3 id="debug-for-programmer-output"><a class="header" href="#debug-for-programmer-output"><code>Debug</code> for Programmer Output</a></h3>
 <p>The <code>Debug</code> trait enables debug formatting in format strings, which you
 indicate by adding <code>:?</code> within <code>{}</code> placeholders.</p>
@@ -31874,7 +31874,7 @@ a data structure that stores data based on the sort order of the values.</p>
 <h3 id="clone-and-copy-for-duplicating-values"><a class="header" href="#clone-and-copy-for-duplicating-values"><code>Clone</code> and <code>Copy</code> for Duplicating Values</a></h3>
 <p>The <code>Clone</code> trait allows you to explicitly create a deep copy of a value, and
 the duplication process might involve running arbitrary code and copying heap
-data. See the <a href="ch04-01-what-is-ownership.html#ways-variables-and-data-interact-clone">“Ways Variables and Data Interact:
+data. See the <a href="https://rust-book.cs.brown.edu/ch04-01-what-is-ownership.html#ways-variables-and-data-interact-clone">“Ways Variables and Data Interact:
 Clone”</a><!-- ignore --> section in
 Chapter 4 for more information on <code>Clone</code>.</p>
 <p>Deriving <code>Clone</code> implements the <code>clone</code> method, which when implemented for the
@@ -31885,7 +31885,7 @@ slice. The slice doesn’t own the type instances it contains, but the vector
 returned from <code>to_vec</code> will need to own its instances, so <code>to_vec</code> calls
 <code>clone</code> on each item. Thus, the type stored in the slice must implement <code>Clone</code>.</p>
 <p>The <code>Copy</code> trait allows you to duplicate a value by only copying bits stored on
-the stack; no arbitrary code is necessary. See the <a href="ch04-01-what-is-ownership.html#stack-only-data-copy">“Stack-Only Data:
+the stack; no arbitrary code is necessary. See the <a href="https://rust-book.cs.brown.edu/ch04-01-what-is-ownership.html#stack-only-data-copy">“Stack-Only Data:
 Copy”</a><!-- ignore --> section in Chapter 4 for more
 information on <code>Copy</code>.</p>
 <p>The <code>Copy</code> trait doesn’t define any methods to prevent programmers from
@@ -31916,7 +31916,7 @@ to store data efficiently.</p>
 meaning all fields or values in the type must also implement <code>Default</code> to
 derive <code>Default</code>.</p>
 <p>The <code>Default::default</code> function is commonly used in combination with the struct
-update syntax discussed in the <a href="ch05-01-defining-structs.html#creating-instances-from-other-instances-with-struct-update-syntax">“Creating Instances From Other Instances With
+update syntax discussed in the <a href="https://rust-book.cs.brown.edu/ch05-01-defining-structs.html#creating-instances-from-other-instances-with-struct-update-syntax">“Creating Instances From Other Instances With
 Struct Update
 Syntax”</a><!-- ignore -->
 section in Chapter 5. You can customize a few fields of a struct and then
@@ -31991,7 +31991,7 @@ fn main() {
 }</code></pre></pre>
 <p>The <code>for</code> loop variable is now named <code>_i</code>, and the warning no longer appears.</p>
 <p>You can also use the <code>cargo fix</code> command to transition your code between
-different Rust editions. Editions are covered in <a href="appendix-05-editions.html">Appendix E</a>.</p>
+different Rust editions. Editions are covered in <a href="https://rust-book.cs.brown.edu/appendix-05-editions.html">Appendix E</a>.</p>
 <h3 id="more-lints-with-clippy"><a class="header" href="#more-lints-with-clippy">More Lints with Clippy</a></h3>
 <p>The Clippy tool is a collection of lints to analyze your code so you can catch
 common mistakes and improve your Rust code.</p>
@@ -32267,7 +32267,7 @@ there’s consensus to accept or reject the feature.</p>
 someone can implement it. The person who implements it very well may not be the
 person who proposed the feature in the first place! When the implementation is
 ready, it lands on the <code>master</code> branch behind a feature gate, as we discussed
-in the <a href="appendix-07-nightly-rust.html#unstable-features">“Unstable Features”</a><!-- ignore --> section.</p>
+in the <a href="https://rust-book.cs.brown.edu/appendix-07-nightly-rust.html#unstable-features">“Unstable Features”</a><!-- ignore --> section.</p>
 <p>After some time, once Rust developers who use nightly releases have been able
 to try out the new feature, team members will discuss the feature, how it’s
 worked out on nightly, and decide if it should make it into stable Rust or not.

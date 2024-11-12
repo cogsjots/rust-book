@@ -242,19 +242,19 @@ h1 {
     counter-reset: h2-counter;
 }
 
-/* Reset counter after the second <h1> */
-h1:nth-of-type(2) {
+/* Reset counter after the third <h1> */
+h1:nth-of-type(3) {
     counter-reset: h1-counter; /* This resets the counter to 0 after the second <h1> */
 }
 
-/* Apply counter to each h1 element starting from the third one */
-h1:nth-of-type(n + 3) {
+/* Apply counter to each h1 element starting from the fourth one */
+h1:nth-of-type(n + 4) {
     counter-increment: h1-counter;
     margin-top: 10px; /* Optional: adds space between the counter and the heading */
 }
 
 /* Add the counter number on a new line */
-h1:nth-of-type(n + 3)::before {
+h1:nth-of-type(n + 4)::before {
     content: counter(h1-counter) ".";
     display: block; /* Makes the counter appear on its own line */
     font-weight: bold;
@@ -273,8 +273,14 @@ h2 {
     padding-bottom: 2px; /* Adds space between the text and the line */
 }
 
+/* Modify h2 counter to only show numbers after fourth h1 */
 h2::before {
     counter-increment: h2-counter;
+    content: "";  /* Default empty content */
+}
+
+/* Special rule for h2 elements that come after the fourth h1 */
+h1:nth-of-type(n + 4) ~ h2::before {
     content: counter(h1-counter) "." counter(h2-counter);
     font-size: 0.8em;
     color: #666;
