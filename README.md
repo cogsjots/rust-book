@@ -40,6 +40,17 @@ done
 You may beed to adjust some lines it it as fro print.html it is off by 1
 
 Other steps are :
-1. Add the cover pagfe html
+1. Add the cover page html
 2. Remove page-break before h2 tags except those for appendix.
 3. update general.css and print.css.
+
+
+### Search and Replace
+
+The following are some of the parts which are replaced:
+
+1. `a href="ch`
+2. `a href="ap`
+3. `<div style="break-before: page; page-break-before: always;"></div><h2` - for all h2 except in appendix sections
+4. `pre><pre class="playground"><code`
+5. `a href="..`
