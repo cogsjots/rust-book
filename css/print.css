@@ -1,3 +1,13 @@
+/* First page margin */
+@page :first {
+    margin: 0mm;
+}
+
+/* All other pages margin */
+@page {
+    margin-top: 2cm;
+    margin-bottom: 15mm;
+}
 
 #sidebar,
 #menu-bar,
